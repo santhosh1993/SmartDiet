@@ -10,11 +10,16 @@ import Foundation
 
 let MAIN_URL = "http://10.71.164.4:8000/"
 
+let EMPTY_STRING = ""
+
 struct ReuseIdentifiers {
     static let selectFoodCell = "SelectFoodCell"
+    static let cellWithImage  = "CellWithImage"
+    static let mealDetailCell = "MealDetailCell"
 }
 struct ControllerIds {
     static let tabBarController = "TabBarController"
+    static let MealDetailController = "MealDetailController"
 }
 struct Colors {
     static let themeColor = "#1A9CB0"
@@ -24,6 +29,8 @@ struct URLs {
 }
 struct Nibs {
     static let selectFoodCell = "SelectFoodCell"
+    static let cellWithImage  = "CellWithImage"
+    static let mealDetailCell = "MealDetailCell"
 }
 struct Images {
     static let veg = "veg"
@@ -31,4 +38,10 @@ struct Images {
 }
 struct StoryBoardNames {
     static let Food = "Food"
+}
+struct Keys {
+    static let price = "price"
+    static let isVeg = "isVeg"
+    static let name  = "name"
+    static let imageUrl   = "imageUrl"
 }

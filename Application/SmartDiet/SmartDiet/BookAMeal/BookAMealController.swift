@@ -52,6 +52,11 @@ extension BookAMealController: UICollectionViewDataSource {
         unWrappedCell.setUpTitleAndType(dataSource.getIsVegAndTItle(section))
         return unWrappedCell
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vcDetail = UIStoryboard.getViewControllerWithId(StoryBoardNames.Food, ControllerIds.MealDetailController) as! MealDetailController
+        vcDetail.dataSource = MealDetailViewModel(dataSource.getDataForDetails(indexPath.item))
+        self.navigationController?.pushViewController(vcDetail, animated: true)
+    }
 }
 extension BookAMealController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

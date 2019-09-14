@@ -48,5 +48,14 @@ final class BookAMealViewModel: BooAMealDataSource {
     func getCaleroies(_ index: Int) -> String { return arrayOfMeals[index].getCaleroies() }
     
     func getPrice(_ index: Int) -> String { return arrayOfMeals[index].getPrice() }
+    
+    func getDataForDetails(_ index: Int) -> [String: Any] {
+        
+        let model = self.arrayOfMeals[index]
+        return [Keys.name: model.name,
+                Keys.isVeg: model.is_veg,
+                Keys.imageUrl: model.image_url,
+                Keys.price: model.price]
+    }
 }
 
