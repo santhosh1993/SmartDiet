@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,7 +17,6 @@
 		9E46A8A7232CA8960037F4CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E46A8A5232CA8960037F4CD /* LaunchScreen.storyboard */; };
 		9E46A8B2232CA8960037F4CD /* SmartDietTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8B1232CA8960037F4CD /* SmartDietTests.swift */; };
 		9E46A8BD232CA8960037F4CD /* SmartDietUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8BC232CA8960037F4CD /* SmartDietUITests.swift */; };
-		9E46A8CE232CAD950037F4CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8CD232CAD950037F4CD /* ViewController.swift */; };
 		9E46A8D1232CAEC30037F4CD /* SelectFoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8CF232CAEC30037F4CD /* SelectFoodCell.swift */; };
 		9E46A8D2232CAEC30037F4CD /* SelectFoodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E46A8D0232CAEC30037F4CD /* SelectFoodCell.xib */; };
 		9E46A8D5232CAFC50037F4CD /* FoodNameWithTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8D4232CAFC50037F4CD /* FoodNameWithTypeView.swift */; };
@@ -67,7 +66,6 @@
 		9E46A8B8232CA8960037F4CD /* SmartDietUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartDietUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E46A8BC232CA8960037F4CD /* SmartDietUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartDietUITests.swift; sourceTree = "<group>"; };
 		9E46A8BE232CA8960037F4CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9E46A8CD232CAD950037F4CD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9E46A8CF232CAEC30037F4CD /* SelectFoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFoodCell.swift; sourceTree = "<group>"; };
 		9E46A8D0232CAEC30037F4CD /* SelectFoodCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectFoodCell.xib; sourceTree = "<group>"; };
 		9E46A8D4232CAFC50037F4CD /* FoodNameWithTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodNameWithTypeView.swift; sourceTree = "<group>"; };
@@ -123,7 +121,6 @@
 				F159149A98876814C57CCCF3 /* Pods-SmartDietUITests.debug.xcconfig */,
 				4E1BFB8C9A7D6342DF998E17 /* Pods-SmartDietUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -162,9 +159,8 @@
 		9E46A898232CA8950037F4CD /* SmartDiet */ = {
 			isa = PBXGroup;
 			children = (
-				D929ED9D232CC1D00084FB68 /* LogIn */,
 				9E46A899232CA8950037F4CD /* AppDelegate.swift */,
-				9E46A8CD232CAD950037F4CD /* ViewController.swift */,
+				D929ED9D232CC1D00084FB68 /* LogIn */,
 				9E46A8CA232CAC5D0037F4CD /* CustomCollectionCells */,
 				9E46A8D3232CAF480037F4CD /* CustomComponents */,
 				9E46A8D6232CAFCF0037F4CD /* Extensions */,
@@ -397,16 +393,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SmartDiet/Pods-SmartDiet-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-SmartDiet/Pods-SmartDiet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-SmartDiet/Pods-SmartDiet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -492,7 +483,6 @@
 				9E46A89A232CA8950037F4CD /* AppDelegate.swift in Sources */,
 				9E46A8A2232CA8950037F4CD /* SmartDiet.xcdatamodeld in Sources */,
 				9E46A8E7232CC7B50037F4CD /* TypeAliases.swift in Sources */,
-				9E46A8CE232CAD950037F4CD /* ViewController.swift in Sources */,
 				9E46A8E0232CB76B0037F4CD /* FoodPtotocols.swift in Sources */,
 				9E46A8D1232CAEC30037F4CD /* SelectFoodCell.swift in Sources */,
 				9E46A8DD232CB6CB0037F4CD /* FoodModel.swift in Sources */,
