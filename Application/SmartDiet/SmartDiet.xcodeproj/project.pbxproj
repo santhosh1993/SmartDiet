@@ -24,6 +24,7 @@
 		9E46A8E0232CB76B0037F4CD /* FoodPtotocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8DF232CB76B0037F4CD /* FoodPtotocols.swift */; };
 		9E46A8E3232CBC630037F4CD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8E2232CBC630037F4CD /* Constants.swift */; };
 		9E46A8E5232CC0930037F4CD /* SDCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8E4232CC0930037F4CD /* SDCustomButton.swift */; };
+		D929ED9F232CC1E80084FB68 /* SDLogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929ED9E232CC1E80084FB68 /* SDLogInController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		9E46A8DF232CB76B0037F4CD /* FoodPtotocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPtotocols.swift; sourceTree = "<group>"; };
 		9E46A8E2232CBC630037F4CD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9E46A8E4232CC0930037F4CD /* SDCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDCustomButton.swift; sourceTree = "<group>"; };
+		D929ED9E232CC1E80084FB68 /* SDLogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDLogInController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		9E46A898232CA8950037F4CD /* SmartDiet */ = {
 			isa = PBXGroup;
 			children = (
+				D929ED9D232CC1D00084FB68 /* LogIn */,
 				9E46A899232CA8950037F4CD /* AppDelegate.swift */,
 				9E46A8CD232CAD950037F4CD /* ViewController.swift */,
 				9E46A8CA232CAC5D0037F4CD /* CustomCollectionCells */,
@@ -201,6 +204,14 @@
 				9E46A8E2232CBC630037F4CD /* Constants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		D929ED9D232CC1D00084FB68 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				D929ED9E232CC1E80084FB68 /* SDLogInController.swift */,
+			);
+			path = LogIn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,6 +356,7 @@
 				9E46A8E0232CB76B0037F4CD /* FoodPtotocols.swift in Sources */,
 				9E46A8D1232CAEC30037F4CD /* SelectFoodCell.swift in Sources */,
 				9E46A8DD232CB6CB0037F4CD /* FoodModel.swift in Sources */,
+				D929ED9F232CC1E80084FB68 /* SDLogInController.swift in Sources */,
 				9E46A8E3232CBC630037F4CD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,6 +534,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SmartDiet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -539,6 +552,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SmartDiet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
