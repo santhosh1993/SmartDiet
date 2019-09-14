@@ -34,6 +34,14 @@ final class BookAMealController: UIViewController {
     private func registerCells() {
         self.collectionView.register(UINib(nibName: Nibs.selectFoodCell, bundle: nil), forCellWithReuseIdentifier: ReuseIdentifiers.selectFoodCell)
     }
+    
+    @IBAction func suggestMeTapped(_ sender: Any) {
+       loadSuugestScreen()
+    }
+    func loadSuugestScreen(){
+        let vcTabController = UIStoryboard.getViewControllerWithId(StoryBoardNames.Food, ControllerIds.suggestMealController)
+        self.navigationController?.pushViewController(vcTabController, animated: false)
+    }
 }
 extension BookAMealController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -50,6 +58,8 @@ extension BookAMealController: UICollectionViewDataSource {
         unWrappedCell.setPrice(dataSource.getPrice(section))
         unWrappedCell.setCalories(dataSource.getCaleroies(section))
         unWrappedCell.setUpTitleAndType(dataSource.getIsVegAndTItle(section))
+        unWrappedCell.food = dataSource.getFood(section)
+        unWrappedCell.delegate = self
         return unWrappedCell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -62,5 +72,14 @@ extension BookAMealController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = UIScreen.main.bounds.size.width
         return CGSize(width: width, height: 150)
+    }
+}
+
+extension BookAMealController: SelectFoodCellProtocol {
+    func optButtonSelectedWith(food: FoodModelProtocol) {
+        print("food",food)
+        let vcTabController = UIStoryboard.getViewControllerWithId(StoryBoardNames.Food, ControllerIds.suggestMealController) as! SuggestMealController
+        vcTabController.food = food
+        self.navigationController?.pushViewController(vcTabController, animated: false)
     }
 }

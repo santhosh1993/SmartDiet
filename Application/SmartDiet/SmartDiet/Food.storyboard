@@ -12,13 +12,13 @@
         <!--Suggest Meal Controller-->
         <scene sceneID="Fcy-5R-LsX">
             <objects>
-                <viewController id="zIQ-cS-XJy" customClass="SuggestMealController" customModule="SmartDiet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SuggestMealController" hidesBottomBarWhenPushed="YES" id="zIQ-cS-XJy" customClass="SuggestMealController" customModule="SmartDiet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2oc-Sq-gHf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Calories" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KrQ-cU-IEA">
-                                <rect key="frame" x="40" y="187" width="334" height="40"/>
+                                <rect key="frame" x="40" y="143" width="334" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="bm8-Ul-T25"/>
                                 </constraints>
@@ -30,7 +30,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sleep Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Sw-Nm-4Fi">
-                                <rect key="frame" x="40" y="237" width="334" height="40"/>
+                                <rect key="frame" x="40" y="193" width="334" height="40"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -39,7 +39,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sf7-Na-z7W">
-                                <rect key="frame" x="40" y="314" width="334" height="40"/>
+                                <rect key="frame" x="40" y="270" width="334" height="40"/>
                                 <color key="backgroundColor" red="0.033001884818077087" green="0.91623997688293457" blue="0.97486919164657593" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Illness">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -54,7 +54,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iD-3Q-Dls">
-                                <rect key="frame" x="40" y="408" width="334" height="40"/>
+                                <rect key="frame" x="40" y="364" width="334" height="40"/>
                                 <color key="backgroundColor" red="0.033001884818077087" green="0.91623997688293457" blue="0.97486919164657593" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Food Time">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -68,31 +68,52 @@
                                     <action selector="foodtImeAction:" destination="zIQ-cS-XJy" eventType="touchUpInside" id="UBq-7g-r9B"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUD-sJ-4Iy">
+                                <rect key="frame" x="40" y="434" width="334" height="40"/>
+                                <color key="backgroundColor" red="0.033001884820000001" green="0.91623997690000003" blue="0.97486919159999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Suggest">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="suggestMealAPICall:" destination="zIQ-cS-XJy" eventType="touchUpInside" id="XgU-Qu-HCA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Sf7-Na-z7W" firstAttribute="height" secondItem="7Sw-Nm-4Fi" secondAttribute="height" id="17v-nM-uFf"/>
+                            <constraint firstItem="oUD-sJ-4Iy" firstAttribute="leading" secondItem="4iD-3Q-Dls" secondAttribute="leading" id="4L0-vC-vUa"/>
                             <constraint firstItem="4iD-3Q-Dls" firstAttribute="leading" secondItem="Sf7-Na-z7W" secondAttribute="leading" id="7pl-mj-C7g"/>
                             <constraint firstItem="KrQ-cU-IEA" firstAttribute="leading" secondItem="oa5-CA-USG" secondAttribute="leading" constant="40" id="AcF-bM-tTW"/>
                             <constraint firstItem="4iD-3Q-Dls" firstAttribute="trailing" secondItem="Sf7-Na-z7W" secondAttribute="trailing" id="ETL-jv-nlP"/>
                             <constraint firstItem="KrQ-cU-IEA" firstAttribute="top" secondItem="oa5-CA-USG" secondAttribute="top" constant="99" id="GI4-ES-7cI"/>
                             <constraint firstItem="Sf7-Na-z7W" firstAttribute="trailing" secondItem="7Sw-Nm-4Fi" secondAttribute="trailing" id="H39-7C-oNF"/>
                             <constraint firstItem="Sf7-Na-z7W" firstAttribute="top" secondItem="7Sw-Nm-4Fi" secondAttribute="bottom" constant="37" id="Kxd-Pg-xOh"/>
+                            <constraint firstItem="oUD-sJ-4Iy" firstAttribute="trailing" secondItem="4iD-3Q-Dls" secondAttribute="trailing" id="NuM-Xi-WCu"/>
                             <constraint firstItem="7Sw-Nm-4Fi" firstAttribute="height" secondItem="KrQ-cU-IEA" secondAttribute="height" id="Oah-od-egl"/>
                             <constraint firstItem="oa5-CA-USG" firstAttribute="trailing" secondItem="KrQ-cU-IEA" secondAttribute="trailing" constant="40" id="TyE-Mo-Q92"/>
+                            <constraint firstItem="oUD-sJ-4Iy" firstAttribute="height" secondItem="4iD-3Q-Dls" secondAttribute="height" id="Vov-m9-IhB"/>
                             <constraint firstItem="7Sw-Nm-4Fi" firstAttribute="top" secondItem="KrQ-cU-IEA" secondAttribute="top" constant="50" id="ZNu-s2-KFS"/>
                             <constraint firstItem="4iD-3Q-Dls" firstAttribute="height" secondItem="Sf7-Na-z7W" secondAttribute="height" id="ctj-MK-icR"/>
                             <constraint firstItem="7Sw-Nm-4Fi" firstAttribute="trailing" secondItem="KrQ-cU-IEA" secondAttribute="trailing" id="e7r-8W-ctK"/>
                             <constraint firstItem="Sf7-Na-z7W" firstAttribute="leading" secondItem="7Sw-Nm-4Fi" secondAttribute="leading" id="hft-08-066"/>
                             <constraint firstItem="4iD-3Q-Dls" firstAttribute="top" secondItem="Sf7-Na-z7W" secondAttribute="bottom" constant="54" id="n8y-pr-071"/>
+                            <constraint firstItem="oUD-sJ-4Iy" firstAttribute="top" secondItem="4iD-3Q-Dls" secondAttribute="top" constant="70" id="yyj-NB-PDI"/>
                             <constraint firstItem="7Sw-Nm-4Fi" firstAttribute="leading" secondItem="KrQ-cU-IEA" secondAttribute="leading" id="z9G-EC-bLu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oa5-CA-USG"/>
                     </view>
                     <navigationItem key="navigationItem" id="vim-CB-YCr"/>
                     <connections>
+                        <outlet property="calorieTxtField" destination="KrQ-cU-IEA" id="gli-NN-FET"/>
                         <outlet property="foodTimeButton" destination="4iD-3Q-Dls" id="guQ-cK-P0g"/>
                         <outlet property="illenssButton" destination="Sf7-Na-z7W" id="C4G-U9-Pgy"/>
+                        <outlet property="sleepTypeTxtfield" destination="7Sw-Nm-4Fi" id="xZs-RB-tjl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RZV-oX-fO8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -123,20 +144,30 @@
                                 </connections>
                             </collectionView>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="k8r-hA-L49">
-                                <rect key="frame" x="304" y="703" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.0" green="0.62096911668777466" blue="0.70171171426773071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="314" y="713" width="90" height="90"/>
+                                <color key="backgroundColor" red="0.0" green="0.62096911668777466" blue="0.70171171426773071" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Z3G-aW-8Yj"/>
+                                    <constraint firstAttribute="width" constant="90" id="Z3G-aW-8Yj"/>
                                     <constraint firstAttribute="width" secondItem="k8r-hA-L49" secondAttribute="height" id="ZeX-m6-hpk"/>
                                 </constraints>
-                                <state key="normal" title="Suggest a Meal">
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Suggest Me">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="50"/>
+                                        <integer key="value" value="45"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="suggestMeTapped:" destination="Shk-XW-ACo" eventType="touchUpInside" id="HCZ-W5-JOv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -249,9 +280,6 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="zIQ-cS-XJy" kind="relationship" relationship="rootViewController" id="5q7-9t-p6Z"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UO8-Jn-u9Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

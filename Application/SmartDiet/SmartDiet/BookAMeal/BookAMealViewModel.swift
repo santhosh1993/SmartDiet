@@ -9,6 +9,10 @@
 import Foundation
 
 final class BookAMealViewModel: BooAMealDataSource {
+    func getFood(_ index: Int) -> FoodModelProtocol {
+        return arrayOfMeals[index]
+    }
+    
     
     var uplodaData: (() -> ())?
     
