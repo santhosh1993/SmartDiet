@@ -108,7 +108,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="a1g-1e-QSG">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="88" width="424" height="725"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LWr-oN-Gb2">
                                     <size key="itemSize" width="50" height="50"/>
@@ -122,13 +122,31 @@
                                     <outlet property="delegate" destination="Shk-XW-ACo" id="e7l-bl-tS3"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="k8r-hA-L49">
+                                <rect key="frame" x="304" y="703" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.0" green="0.62096911668777466" blue="0.70171171426773071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Z3G-aW-8Yj"/>
+                                    <constraint firstAttribute="width" secondItem="k8r-hA-L49" secondAttribute="height" id="ZeX-m6-hpk"/>
+                                </constraints>
+                                <state key="normal" title="Suggest a Meal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="a1g-1e-QSG" firstAttribute="top" secondItem="vPh-pa-YHT" secondAttribute="top" id="CRL-z9-thQ"/>
+                            <constraint firstItem="vPh-pa-YHT" firstAttribute="trailing" secondItem="k8r-hA-L49" secondAttribute="trailing" constant="10" id="KTb-Ch-k4M"/>
+                            <constraint firstItem="vPh-pa-YHT" firstAttribute="bottom" secondItem="k8r-hA-L49" secondAttribute="bottom" constant="10" id="SSp-dW-8GR"/>
                             <constraint firstItem="a1g-1e-QSG" firstAttribute="bottom" secondItem="vPh-pa-YHT" secondAttribute="bottom" id="U7B-dw-Kse"/>
                             <constraint firstItem="a1g-1e-QSG" firstAttribute="leading" secondItem="vPh-pa-YHT" secondAttribute="leading" id="c3j-cg-PR7"/>
-                            <constraint firstItem="a1g-1e-QSG" firstAttribute="trailing" secondItem="vPh-pa-YHT" secondAttribute="trailing" id="vLW-kn-SG9"/>
+                            <constraint firstItem="a1g-1e-QSG" firstAttribute="trailing" secondItem="vPh-pa-YHT" secondAttribute="trailing" constant="10" id="vLW-kn-SG9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vPh-pa-YHT"/>
                     </view>
