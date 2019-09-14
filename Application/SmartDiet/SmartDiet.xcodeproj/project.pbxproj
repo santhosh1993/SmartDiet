@@ -23,6 +23,7 @@
 		9E46A8DD232CB6CB0037F4CD /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8DC232CB6CB0037F4CD /* FoodModel.swift */; };
 		9E46A8E0232CB76B0037F4CD /* FoodPtotocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8DF232CB76B0037F4CD /* FoodPtotocols.swift */; };
 		9E46A8E3232CBC630037F4CD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8E2232CBC630037F4CD /* Constants.swift */; };
+		9E46A8E5232CC0930037F4CD /* SDCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8E4232CC0930037F4CD /* SDCustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		9E46A8DC232CB6CB0037F4CD /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
 		9E46A8DF232CB76B0037F4CD /* FoodPtotocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPtotocols.swift; sourceTree = "<group>"; };
 		9E46A8E2232CBC630037F4CD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9E46A8E4232CC0930037F4CD /* SDCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDCustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 			children = (
 				9E46A8D4232CAFC50037F4CD /* SDFoodName.swift */,
 				9E46A8D9232CB2700037F4CD /* SDFoodName.xib */,
+				9E46A8E4232CC0930037F4CD /* SDCustomButton.swift */,
 			);
 			path = CustomComponents;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E46A8D8232CAFE70037F4CD /* UIViewExtension.swift in Sources */,
+				9E46A8E5232CC0930037F4CD /* SDCustomButton.swift in Sources */,
 				9E46A8D5232CAFC50037F4CD /* SDFoodName.swift in Sources */,
 				9E46A89A232CA8950037F4CD /* AppDelegate.swift in Sources */,
 				9E46A8A2232CA8950037F4CD /* SmartDiet.xcdatamodeld in Sources */,
@@ -524,7 +528,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.epam.SmartDiet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -541,7 +545,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.epam.SmartDiet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
