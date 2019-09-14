@@ -15,11 +15,17 @@ final class SelectFoodCell: UICollectionViewCell {
     
     @IBOutlet weak var imageViewThumbnail: UIImageView!
     @IBOutlet var viewFoodName: FoodNameWithTypeView!
+    @IBOutlet weak var leftView: UIView!
     @IBOutlet weak var labelCalories: UILabel!
     @IBOutlet weak var labelPrice: UILabel!
+    @IBOutlet weak var buttonAdd: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        buttonAdd.layer.borderColor = UIColor(red: 196.0/255.0, green: 196.0/255.0, blue: 196.0/255.0, alpha: 1.0).cgColor
+        buttonAdd.layer.borderWidth = 1
+        buttonAdd.layer.cornerRadius = 15
+        leftView.layer.cornerRadius = 10
     }
     func setUrl(_ url: URL?) {
         self.imageViewThumbnail.sd_setImage(with: url, completed: nil)

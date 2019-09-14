@@ -8,6 +8,11 @@
 
 import Foundation
 
+enum Errors: Error {
+    case inValidURL
+    case noInterNet
+
+}
 class NetWorking {
     
     static func commonServiceCall(urlRequest: URLRequest, _ completion: @escaping ((Any?, Error?) -> ())) {

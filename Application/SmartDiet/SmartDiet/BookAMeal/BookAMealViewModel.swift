@@ -22,15 +22,28 @@ final class BookAMealViewModel: BooAMealDataSource {
     init(_ bookAMealsDatahandler: BookAMealNetWorkHandlerProtocol) {
         self.dataHandler = bookAMealsDatahandler
     }
-    
+    func getData() {
+        self.dataHandler.getData { [unowned self] (data, error) in
+            guard error == nil, let arrData = data as? [[String: Any]]  else { self.uplodaData?(); return}
+            self.arrayOfMeals.removeAll()
+            _ = arrData.map { [unowned self] value in
+                let jsonData = try? JSONSerialization.data(withJSONObject: value, options: .prettyPrinted)
+                guard let unWeappedData = jsonData else { return }
+                do {
+                    let model = try JSONDecoder().decode(FoodModel.self, from: unWeappedData)
+                    self.arrayOfMeals.append(model)
+                } catch {}
+            }
+            
+        }
+    }
     func getCount() -> Int { return arrayOfMeals.count }
     
     func getImageThubnail(_ index: Int) -> URL? { return arrayOfMeals[index].getThumbnailUrl() }
     
     func getIsVegAndTItle(_ index: Int) -> (Bool, String) {
         let itemAtIndex = arrayOfMeals[index]
-        let isVeg = itemAtIndex.foodItem.foodType == .veg
-        return (isVeg, itemAtIndex.foodItem.itemName)
+        return (itemAtIndex.is_veg, itemAtIndex.name)
     }
     func getCaleroies(_ index: Int) -> String { return arrayOfMeals[index].getCaleroies() }
     

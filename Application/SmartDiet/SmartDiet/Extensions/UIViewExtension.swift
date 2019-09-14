@@ -11,7 +11,8 @@ import UIKit
 extension UIView {
     
     func getViewFromXibAndAddItAsSubView() -> UIView? {
-        let viewFromXib = Bundle.main.loadNibNamed(String(describing: self), owner: self, options: nil)
+        let currentType = type(of: self)
+        let viewFromXib = Bundle.main.loadNibNamed(String(describing: currentType), owner: self, options: nil)
         guard let arrayUnwrapped = viewFromXib,
          arrayUnwrapped.count > 0,
             let unWrappedView = arrayUnwrapped[0] as? UIView else { return nil }

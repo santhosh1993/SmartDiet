@@ -12,15 +12,18 @@ enum FoodType: String {
     case veg
     case nonVeg
 }
-protocol FoodItemProtocol {
-    var itemName: String { get set }
-    var foodType: FoodType { get set }
-}
 protocol FoodModelProtocol {
-    var foodItem: FoodItemProtocol { get }
-    var calories: Int32 { get }
-    var price: Int32 { get }
-    var thumbnailUrl: String { get }
+    var food_id: Int { get }
+    var name: String { get }
+    var calories: String { get }
+    var description: String { get }
+    var is_veg: Bool { get }
+    var image_url: String { get }
+    var price: String { get }
+    var protein: Int { get }
+    var fat: Int { get }
+    var carbs: Int { get }
+    var fiber: Int { get }
     func getPrice() -> String
     func getCaleroies() -> String
     func getThumbnailUrl() -> URL?
