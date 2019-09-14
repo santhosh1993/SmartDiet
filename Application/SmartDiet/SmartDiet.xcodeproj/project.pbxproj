@@ -22,6 +22,7 @@
 		9E46A8DA232CB2700037F4CD /* SDFoodName.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E46A8D9232CB2700037F4CD /* SDFoodName.xib */; };
 		9E46A8DD232CB6CB0037F4CD /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8DC232CB6CB0037F4CD /* FoodModel.swift */; };
 		9E46A8E0232CB76B0037F4CD /* FoodPtotocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8DF232CB76B0037F4CD /* FoodPtotocols.swift */; };
+		9E46A8E3232CBC630037F4CD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8E2232CBC630037F4CD /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		9E46A8D9232CB2700037F4CD /* SDFoodName.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDFoodName.xib; sourceTree = "<group>"; };
 		9E46A8DC232CB6CB0037F4CD /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
 		9E46A8DF232CB76B0037F4CD /* FoodPtotocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPtotocols.swift; sourceTree = "<group>"; };
+		9E46A8E2232CBC630037F4CD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				9E46A8D6232CAFCF0037F4CD /* Extensions */,
 				9E46A8DB232CB5D10037F4CD /* Models */,
 				9E46A8DE232CB74D0037F4CD /* Protocols */,
+				9E46A8E1232CBC490037F4CD /* Constants */,
 				9E46A89D232CA8950037F4CD /* Main.storyboard */,
 				9E46A8A3232CA8960037F4CD /* Assets.xcassets */,
 				9E46A8A5232CA8960037F4CD /* LaunchScreen.storyboard */,
@@ -187,6 +190,14 @@
 				9E46A8DF232CB76B0037F4CD /* FoodPtotocols.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9E46A8E1232CBC490037F4CD /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				9E46A8E2232CBC630037F4CD /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +341,7 @@
 				9E46A8E0232CB76B0037F4CD /* FoodPtotocols.swift in Sources */,
 				9E46A8D1232CAEC30037F4CD /* SelectFoodCell.swift in Sources */,
 				9E46A8DD232CB6CB0037F4CD /* FoodModel.swift in Sources */,
+				9E46A8E3232CBC630037F4CD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

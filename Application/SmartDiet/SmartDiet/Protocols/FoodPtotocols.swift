@@ -20,5 +20,6 @@ protocol FoodModelProtocol {
     var foodItem: FoodItemProtocol { get set }
     var calories: Int32 { get set }
     var price: Int32 { get set }
-    
+    func getPrice() -> String
+    func getCaleroies() -> String
 }

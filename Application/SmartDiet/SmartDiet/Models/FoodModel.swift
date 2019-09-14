@@ -17,7 +17,7 @@ struct FoodModel: FoodModelProtocol {
     func getPrice() -> String {
         return "\(self.price)"
     }
-    func caleroies() -> String {
+    func getCaleroies() -> String {
         return "\(self.calories)"
     }
 }

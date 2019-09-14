@@ -12,9 +12,13 @@ final class SelectFoodCell: UICollectionViewCell {
 
     // IBoutlets
     @IBOutlet weak var imageViewThumbnail: UIImage!
-    @IBOutlet weak var 
+    @IBOutlet weak var viewFoodName: UILabel!
+    @IBOutlet weak var labelCalories: UILabel!
+    @IBOutlet weak var labelPrice: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
+    
 }
