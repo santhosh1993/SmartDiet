@@ -14,10 +14,10 @@ struct ReuseIdentifiers {
     static let selectFoodCell = "SelectFoodCell"
 }
 struct ControllerIds {
-    let tabBarController = "TabBarController"
+    static let tabBarController = "TabBarController"
 }
 struct Colors {
-    let themeColor = "#1A9CB0"
+    static let themeColor = "#1A9CB0"
 }
 struct URLs {
     static let GET_FOOD_LIST = MAIN_URL + "data/foodlist/"
@@ -28,4 +28,7 @@ struct Nibs {
 struct Images {
     static let veg = "veg"
     static let nonVeg = "nonVeg"
+}
+struct StoryBoardNames {
+    static let Food = "Food"
 }
