@@ -34,6 +34,14 @@ final class BookAMealController: UIViewController {
     private func registerCells() {
         self.collectionView.register(UINib(nibName: Nibs.selectFoodCell, bundle: nil), forCellWithReuseIdentifier: ReuseIdentifiers.selectFoodCell)
     }
+    
+    @IBAction func suggestMeTapped(_ sender: Any) {
+       loadSuugestScreen()
+    }
+    func loadSuugestScreen(){
+        let vcTabController = UIStoryboard.getViewControllerWithId(StoryBoardNames.Food, ControllerIds.suggestMealController)
+        self.navigationController?.pushViewController(vcTabController, animated: false)
+    }
 }
 extension BookAMealController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

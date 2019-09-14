@@ -15,6 +15,7 @@ struct ReuseIdentifiers {
 }
 struct ControllerIds {
     static let tabBarController = "TabBarController"
+    static let suggestMealController = "SuggestMealController"
 }
 struct Colors {
     static let themeColor = "#1A9CB0"
