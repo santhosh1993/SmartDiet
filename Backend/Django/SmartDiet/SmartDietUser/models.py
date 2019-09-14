@@ -10,3 +10,12 @@ class Users(models.Model):
 
     def __str__(self):
         return f"{self.user_name}"
+
+    @staticmethod
+    def authenticate_user(email_id, password):
+        user = Users.objects.filter(email_id=email_id)
+        if user.exists():
+            user = user.get()
+            if user.password == password:
+                return user
+        return None
