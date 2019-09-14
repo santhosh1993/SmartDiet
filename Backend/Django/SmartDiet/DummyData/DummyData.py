@@ -160,7 +160,7 @@ def insertFood():
             "is_veg": False
         },
         {
-            "id": 8,
+            "id": 9,
             "name": "Chicken Chettinad & Tawa Paranthas",
             "url": "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_485,f_auto,ar_485:605,c_fit,q_auto:eco/dpr_2/image/singles/eat/meals/EAT4230/2.jpg",
             "description": "A classic from the Southern region, our delicious main has tender pieces of chicken cooked"
@@ -194,3 +194,86 @@ def insertFood():
         foodIn.is_veg = food["is_veg"]
         foodIn.image_url = food["url"]
         foodIn.save()
+
+def insertIllnessData():
+    illnesses = [
+         "fever",
+         "cold"
+    ]
+    for illness in illnesses:
+        illnessIn = Illness()
+        illnessIn.type = illness
+        illnessIn.save()
+
+def insertTrainingData():
+    illnessAndFood = [
+        {
+            "name": "fever",
+            "food": {
+                "breakfast": [{
+                    "id": 1,
+                    "calories_low": 100,
+                    "calories_high": 1000,
+                }, {
+                    "id": 2,
+                    "calories_low": 500,
+                    "calories_high": 2000,
+                }],
+                "lunch": [{
+                    "id": 3,
+                    "calories_low": 100,
+                    "calories_high": 1000,
+                }, {
+                    "id": 4,
+                    "calories_low": 500,
+                    "calories_high": 2000,
+                }],
+                "dinner": [{
+                    "id": 5,
+                    "calories_low": 100,
+                    "calories_high": 1500,
+                }, {
+                    "id": 4,
+                    "calories_low": 500,
+                    "calories_high": 2000,
+                }]
+            }
+        }
+    ]
+    for illnessData in illnessAndFood:
+        illness = Illness.objects.filter(type=illnessData['name'])
+        if illness.exists():
+            illnessId = illness.get().id
+            illnessFoods = illnessData["food"]
+            breakfast = illnessFoods["breakfast"]
+            lunch = illnessFoods["lunch"]
+            dinner = illnessFoods["dinner"]
+
+            foodTypes = [
+                {
+                    "id": 1,
+                    "data": breakfast
+                },
+                {
+                    "id": 2,
+                    "data": lunch
+                },
+                {
+                    "id": 3,
+                    "data": dinner
+                },
+            ]
+
+            for type in foodTypes:
+                foodtime = type["id"]
+                foods = type["data"]
+                for each in foods:
+                    for x in range(100):
+                        training = TrainingData()
+                        training.calories = random.randint(each["calories_low"], each["calories_high"])
+                        training.sleeptime = float(random.randint(60, 80)) * 0.1
+                        training.food = each["id"]
+                        training.illness = illnessId
+                        training.foodtime = foodtime
+                        training.is_training = True
+                        training.save()
