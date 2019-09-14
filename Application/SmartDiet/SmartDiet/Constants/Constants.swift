@@ -9,7 +9,8 @@
 import Foundation
 
 struct ReuseIdentifiers {
-    
     static let selectFoodCell = "SelectFoodCell"
-    
+}
+struct Colors {
+    let themeColor = "#1A9CB0"
 }

@@ -8,13 +8,11 @@
 
 import UIKit
 
-final class SDViewController: UIViewController {
+final class ViewController: UIViewController {
 
     //IBoutlets
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
 }
 

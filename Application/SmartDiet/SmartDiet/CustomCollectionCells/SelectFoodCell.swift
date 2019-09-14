@@ -8,17 +8,24 @@
 
 import UIKit
 
-final class SelectFoodCell: UICollectionViewCell {
+final class SelectFoodCell: UICollectionViewCell, FoodCellProtocol {
 
-    // IBoutlets
-    @IBOutlet weak var imageViewThumbnail: UIImage!
-    @IBOutlet weak var viewFoodName: UILabel!
+    //MARK: IBoutlets
+    
+    @IBOutlet weak var imageViewThumbnail: UIImageView!
+    var viewFoodName: FoodTypeView!
     @IBOutlet weak var labelCalories: UILabel!
     @IBOutlet weak var labelPrice: UILabel!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
+        viewFoodName = self.viewWithTag(100) as? FoodTypeView
     }
+
+    //MARK: IBActions
     
+    @IBAction func buttonActionAdd(_ sender: UIButton) {
+        
+    }
 }
+
