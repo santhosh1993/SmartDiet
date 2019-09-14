@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		9E46A89A232CA8950037F4CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A899232CA8950037F4CD /* AppDelegate.swift */; };
-		9E46A89C232CA8950037F4CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A89B232CA8950037F4CD /* ViewController.swift */; };
+		9E46A89C232CA8950037F4CD /* SDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A89B232CA8950037F4CD /* SDViewController.swift */; };
 		9E46A89F232CA8950037F4CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E46A89D232CA8950037F4CD /* Main.storyboard */; };
 		9E46A8A2232CA8950037F4CD /* SmartDiet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8A0232CA8950037F4CD /* SmartDiet.xcdatamodeld */; };
 		9E46A8A4232CA8960037F4CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E46A8A3232CA8960037F4CD /* Assets.xcassets */; };
 		9E46A8A7232CA8960037F4CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E46A8A5232CA8960037F4CD /* LaunchScreen.storyboard */; };
 		9E46A8B2232CA8960037F4CD /* SmartDietTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8B1232CA8960037F4CD /* SmartDietTests.swift */; };
 		9E46A8BD232CA8960037F4CD /* SmartDietUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8BC232CA8960037F4CD /* SmartDietUITests.swift */; };
+		9E46A8CC232CAC950037F4CD /* SelectFoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8CB232CAC950037F4CD /* SelectFoodCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,7 @@
 /* Begin PBXFileReference section */
 		9E46A896232CA8950037F4CD /* SmartDiet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartDiet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E46A899232CA8950037F4CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9E46A89B232CA8950037F4CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9E46A89B232CA8950037F4CD /* SDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDViewController.swift; sourceTree = "<group>"; };
 		9E46A89E232CA8950037F4CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E46A8A1232CA8950037F4CD /* SmartDiet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartDiet.xcdatamodel; sourceTree = "<group>"; };
 		9E46A8A3232CA8960037F4CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		9E46A8B8232CA8960037F4CD /* SmartDietUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartDietUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E46A8BC232CA8960037F4CD /* SmartDietUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartDietUITests.swift; sourceTree = "<group>"; };
 		9E46A8BE232CA8960037F4CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E46A8CB232CAC950037F4CD /* SelectFoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFoodCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				9E46A899232CA8950037F4CD /* AppDelegate.swift */,
-				9E46A89B232CA8950037F4CD /* ViewController.swift */,
+				9E46A89B232CA8950037F4CD /* SDViewController.swift */,
+				9E46A8CA232CAC5D0037F4CD /* CustomCollectionCells */,
 				9E46A89D232CA8950037F4CD /* Main.storyboard */,
 				9E46A8A3232CA8960037F4CD /* Assets.xcassets */,
 				9E46A8A5232CA8960037F4CD /* LaunchScreen.storyboard */,
@@ -126,6 +129,14 @@
 				9E46A8BE232CA8960037F4CD /* Info.plist */,
 			);
 			path = SmartDietUITests;
+			sourceTree = "<group>";
+		};
+		9E46A8CA232CAC5D0037F4CD /* CustomCollectionCells */ = {
+			isa = PBXGroup;
+			children = (
+				9E46A8CB232CAC950037F4CD /* SelectFoodCell.swift */,
+			);
+			path = CustomCollectionCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E46A89C232CA8950037F4CD /* ViewController.swift in Sources */,
+				9E46A89C232CA8950037F4CD /* SDViewController.swift in Sources */,
 				9E46A89A232CA8950037F4CD /* AppDelegate.swift in Sources */,
 				9E46A8A2232CA8950037F4CD /* SmartDiet.xcdatamodeld in Sources */,
+				9E46A8CC232CAC950037F4CD /* SelectFoodCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
