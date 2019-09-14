@@ -20,6 +20,8 @@
 		9E46A8D5232CAFC50037F4CD /* SDFoodName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8D4232CAFC50037F4CD /* SDFoodName.swift */; };
 		9E46A8D8232CAFE70037F4CD /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8D7232CAFE70037F4CD /* UIViewExtension.swift */; };
 		9E46A8DA232CB2700037F4CD /* SDFoodName.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E46A8D9232CB2700037F4CD /* SDFoodName.xib */; };
+		9E46A8DD232CB6CB0037F4CD /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8DC232CB6CB0037F4CD /* FoodModel.swift */; };
+		9E46A8E0232CB76B0037F4CD /* FoodPtotocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8DF232CB76B0037F4CD /* FoodPtotocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		9E46A8D4232CAFC50037F4CD /* SDFoodName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDFoodName.swift; sourceTree = "<group>"; };
 		9E46A8D7232CAFE70037F4CD /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		9E46A8D9232CB2700037F4CD /* SDFoodName.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDFoodName.xib; sourceTree = "<group>"; };
+		9E46A8DC232CB6CB0037F4CD /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
+		9E46A8DF232CB76B0037F4CD /* FoodPtotocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPtotocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,12 +113,13 @@
 		9E46A898232CA8950037F4CD /* SmartDiet */ = {
 			isa = PBXGroup;
 			children = (
-				9E46A8CD232CAD950037F4CD /* ViewController.swift */,
 				9E46A899232CA8950037F4CD /* AppDelegate.swift */,
+				9E46A8CD232CAD950037F4CD /* ViewController.swift */,
 				9E46A8CA232CAC5D0037F4CD /* CustomCollectionCells */,
 				9E46A8D3232CAF480037F4CD /* CustomComponents */,
 				9E46A8D6232CAFCF0037F4CD /* Extensions */,
 				9E46A8DB232CB5D10037F4CD /* Models */,
+				9E46A8DE232CB74D0037F4CD /* Protocols */,
 				9E46A89D232CA8950037F4CD /* Main.storyboard */,
 				9E46A8A3232CA8960037F4CD /* Assets.xcassets */,
 				9E46A8A5232CA8960037F4CD /* LaunchScreen.storyboard */,
@@ -171,8 +176,17 @@
 		9E46A8DB232CB5D10037F4CD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9E46A8DC232CB6CB0037F4CD /* FoodModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		9E46A8DE232CB74D0037F4CD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9E46A8DF232CB76B0037F4CD /* FoodPtotocols.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,7 +327,9 @@
 				9E46A89A232CA8950037F4CD /* AppDelegate.swift in Sources */,
 				9E46A8A2232CA8950037F4CD /* SmartDiet.xcdatamodeld in Sources */,
 				9E46A8CE232CAD950037F4CD /* ViewController.swift in Sources */,
+				9E46A8E0232CB76B0037F4CD /* FoodPtotocols.swift in Sources */,
 				9E46A8D1232CAEC30037F4CD /* SelectFoodCell.swift in Sources */,
+				9E46A8DD232CB6CB0037F4CD /* FoodModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

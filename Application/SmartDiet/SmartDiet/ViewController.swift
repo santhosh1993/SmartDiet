@@ -10,6 +10,8 @@ import UIKit
 
 final class SDViewController: UIViewController {
 
+    //IBoutlets
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
