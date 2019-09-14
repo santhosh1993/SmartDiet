@@ -20,8 +20,8 @@ class SDLogInController: UIViewController,UITextFieldDelegate{
     }
     
     @IBAction func loginClicked(_ sender: Any) {
-        let sv = UIViewController.displaySpinner(onView: self.view)
-
+        let sv = displaySpinner(onView: self.view)
+removeSpinner(spinner: sv)
         logInAPICallwith(username:usernameTxtFiled.text ?? "",password:passwordTxtField.text ?? "")
         loadHomeScreen()
 
