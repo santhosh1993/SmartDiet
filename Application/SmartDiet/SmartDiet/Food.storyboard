@@ -1,25 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Suggest Meal Controller-->
         <scene sceneID="Fcy-5R-LsX">
             <objects>
-                <viewController id="zIQ-cS-XJy" sceneMemberID="viewController">
+                <viewController id="zIQ-cS-XJy" customClass="SuggestMealController" customModule="SmartDiet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2oc-Sq-gHf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Calories" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KrQ-cU-IEA">
+                                <rect key="frame" x="40" y="187" width="334" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="bm8-Ul-T25"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="zIQ-cS-XJy" id="iAJ-uS-I1j"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sleep Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Sw-Nm-4Fi">
+                                <rect key="frame" x="40" y="237" width="334" height="40"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="zIQ-cS-XJy" id="0LH-HQ-lYk"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sf7-Na-z7W">
+                                <rect key="frame" x="40" y="314" width="334" height="40"/>
+                                <color key="backgroundColor" red="0.033001884818077087" green="0.91623997688293457" blue="0.97486919164657593" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Illness">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="illnessAction:" destination="zIQ-cS-XJy" eventType="touchUpInside" id="vZD-yH-eTr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iD-3Q-Dls">
+                                <rect key="frame" x="40" y="408" width="334" height="40"/>
+                                <color key="backgroundColor" red="0.033001884818077087" green="0.91623997688293457" blue="0.97486919164657593" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Food Time">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="foodtImeAction:" destination="zIQ-cS-XJy" eventType="touchUpInside" id="UBq-7g-r9B"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Sf7-Na-z7W" firstAttribute="height" secondItem="7Sw-Nm-4Fi" secondAttribute="height" id="17v-nM-uFf"/>
+                            <constraint firstItem="4iD-3Q-Dls" firstAttribute="leading" secondItem="Sf7-Na-z7W" secondAttribute="leading" id="7pl-mj-C7g"/>
+                            <constraint firstItem="KrQ-cU-IEA" firstAttribute="leading" secondItem="oa5-CA-USG" secondAttribute="leading" constant="40" id="AcF-bM-tTW"/>
+                            <constraint firstItem="4iD-3Q-Dls" firstAttribute="trailing" secondItem="Sf7-Na-z7W" secondAttribute="trailing" id="ETL-jv-nlP"/>
+                            <constraint firstItem="KrQ-cU-IEA" firstAttribute="top" secondItem="oa5-CA-USG" secondAttribute="top" constant="99" id="GI4-ES-7cI"/>
+                            <constraint firstItem="Sf7-Na-z7W" firstAttribute="trailing" secondItem="7Sw-Nm-4Fi" secondAttribute="trailing" id="H39-7C-oNF"/>
+                            <constraint firstItem="Sf7-Na-z7W" firstAttribute="top" secondItem="7Sw-Nm-4Fi" secondAttribute="bottom" constant="37" id="Kxd-Pg-xOh"/>
+                            <constraint firstItem="7Sw-Nm-4Fi" firstAttribute="height" secondItem="KrQ-cU-IEA" secondAttribute="height" id="Oah-od-egl"/>
+                            <constraint firstItem="oa5-CA-USG" firstAttribute="trailing" secondItem="KrQ-cU-IEA" secondAttribute="trailing" constant="40" id="TyE-Mo-Q92"/>
+                            <constraint firstItem="7Sw-Nm-4Fi" firstAttribute="top" secondItem="KrQ-cU-IEA" secondAttribute="top" constant="50" id="ZNu-s2-KFS"/>
+                            <constraint firstItem="4iD-3Q-Dls" firstAttribute="height" secondItem="Sf7-Na-z7W" secondAttribute="height" id="ctj-MK-icR"/>
+                            <constraint firstItem="7Sw-Nm-4Fi" firstAttribute="trailing" secondItem="KrQ-cU-IEA" secondAttribute="trailing" id="e7r-8W-ctK"/>
+                            <constraint firstItem="Sf7-Na-z7W" firstAttribute="leading" secondItem="7Sw-Nm-4Fi" secondAttribute="leading" id="hft-08-066"/>
+                            <constraint firstItem="4iD-3Q-Dls" firstAttribute="top" secondItem="Sf7-Na-z7W" secondAttribute="bottom" constant="54" id="n8y-pr-071"/>
+                            <constraint firstItem="7Sw-Nm-4Fi" firstAttribute="leading" secondItem="KrQ-cU-IEA" secondAttribute="leading" id="z9G-EC-bLu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="oa5-CA-USG"/>
                     </view>
                     <navigationItem key="navigationItem" id="vim-CB-YCr"/>
+                    <connections>
+                        <outlet property="foodTimeButton" destination="4iD-3Q-Dls" id="guQ-cK-P0g"/>
+                        <outlet property="illenssButton" destination="Sf7-Na-z7W" id="C4G-U9-Pgy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RZV-oX-fO8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

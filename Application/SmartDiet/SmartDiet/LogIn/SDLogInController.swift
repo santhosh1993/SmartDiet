@@ -55,7 +55,7 @@ removeSpinner(spinner: sv)
 
     func loadHomeScreen(){
         let vcTabController = UIStoryboard.getViewControllerWithId(StoryBoardNames.Food, ControllerIds.tabBarController)
-        self.navigationController?.pushViewController(vcTabController, animated: true)
+        self.navigationController?.pushViewController(vcTabController, animated: false)
     }
 
 }
