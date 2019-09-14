@@ -1,4 +1,5 @@
 from django.db import models
+import random
 
 class Food(models.Model):
     id = models.AutoField(primary_key=True)

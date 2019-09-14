@@ -1,4 +1,5 @@
 from .models import Food, Illness, TrainingData
+import random
 
 def insertFood():
     foods = [
@@ -159,7 +160,135 @@ def insertFood():
             "price": 120,
             "is_veg": False
         },
-        
+        {
+            "id": 9,
+            "name": "Bread Omelette With Roast Potato Wedges",
+            "url": "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_485,f_auto,ar_485:605,c_fit,q_auto:eco/dpr_2/image/singles/eat/meals/EAT2938/5.jpg",
+            "description": "Supercharge your day with a protein-packed meal that has a delicious masala omelette at the center of it. Served with herb roasted potato wedges, a 3-bean stew and toast, this meal is the perfect way to kickstart your day.\n\n- 100% whole wheat toast\n- Eggs rich in protein and good fat\n- Potato wedges roasted, not fried\n- Heart-healthy beans\n\nAllergen Information: Contains gluten, soybean and eggs.",
+            "calories": 338,
+            "protein": 23,
+            "fat": 17,
+            "carbs": 23,
+            "fiber": 12,
+            "price": 100,
+            "is_veg": False
+        },
+        {
+            "id": 10,
+            "name": "Fruit Pop Oatmeal Bowl",
+            "url": "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_485,f_auto,ar_485:605,c_fit,q_auto:eco/dpr_2/image/singles/eat/meals/EAT1435/8.jpg",
+            "description": "our Fruit Pop Oatmeal bowl is the perfect way to refuel during the day. A wholesome take on the popular overnight oats jar trend, we use nutritious unprocessed rolled oats tossed with basil seeds and seasonal fruits. The oatmeal is sweetened with natural sugars like dates and honey. \n\n- Antioxidant-rich fruits\n- Protein-rich unprocessed rolled oats\n- No artificial sugars, sweetened with honey and dates\n\nAllergen Information: Contains dairy.",
+            "calories": 292,
+            "protein": 6,
+            "fat": 3,
+            "carbs": 61,
+            "fiber": 6,
+            "price": 120,
+            "is_veg": False
+        },
+        {
+            "id": 11,
+            "name": "Thali Chicken",
+            "url": "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_485,f_auto,ar_485:605,c_fit,q_auto:eco/dpr_2/image/singles/eat/meals/EAT1618/15.jpg",
+            "description": "murg khurchan that has succulent pieces of chicken tossed through onions and capsicum. It’s served with an innovative no-cream dal makhni that has the same taste and richness as the original, minus the unnecessary guilt! \n\n- Steroids-free chicken, fit for your protein needs\n- Slim milk dal makhni, fit for your caloric intake\n- Fibre-rich rotis, fit for your digestive health\n\nAllergen Information: Contains gluten, dairy and nuts.",
+            "calories": 591,
+            "protein": 38,
+            "fat": 16,
+            "carbs": 70,
+            "fiber": 19,
+            "price": 150,
+            "is_veg": False
+        },
+        {
+            "id": 12,
+            "name": "Pulao, Ghar Ke Rajma & Chana Patty",
+            "url": "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_485,f_auto,ar_485:605,c_fit,q_auto:eco/dpr_2/image/singles/eat/meals/WL511/2.jpg",
+            "description": "Nothing beats homestyle food. Especially good ol' rajma! Spiced with amchur, chilli and finished with a sour twist of lime, enjoy some ghar ka rajma with our carrot and peas veg pulao made using high-fibre brown rice. We're also sending you a side of chana patty made with a super blend of sweet potatoes and chana as well as the salad of the day and our very own digestive tea mix. \n- Protein-packed rajma and chana\n- High-fibre brown rice\n- Immunity-boosting vegetables\n\nServed with the superfood of the day.",
+            "calories": 441,
+            "protein": 21,
+            "fat": 5,
+            "carbs": 76,
+            "fiber": 23,
+            "price": 120,
+            "is_veg": True
+        },
+        {
+            "id": 13,
+            "name": "Multigrain Palak Khichdi",
+            "url": "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_377,ar_1.33,fl_progressive,f_auto,q_auto/dpr_2/image/singles/eat/meals/WL436/2.jpg",
+            "description": "Rich in healthy fibre, proteins, vitamins and essential minerals, this vegan yogic bowl of multigrain khichdi is just what you need today! With a base of barley, broken wheat, quinoa, foxtail millet, moong dal, and brown Basmati rice, the addition of iron-rich spinach makes the khichdi a wholesome meal. Enjoy it with a side of roasted papad.\n\n- High-fibre grains\n- Protein-rich quinoa and dal\n- Spinach packed with iron\n- Anti-inflammatory spices\n- Vegan khichdi\n\nAllergen Information: Contains gluten and nuts.",
+            "calories": 311,
+            "protein": 12,
+            "fat": 13,
+            "carbs": 34,
+            "fiber": 11,
+            "price": 120,
+            "is_veg": True
+        },
+        {
+            "id": 14,
+            "name": "Churan Wali Bhindi, Sarson Murg & Rotis",
+            "url": "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_485,f_auto,ar_485:605,c_fit,q_auto:eco/dpr_2/image/singles/eat/meals/EAT3971/4.jpg",
+            "description": "delicious sarson murg that's made using traditional mustard and cashew paste, minus the butter and cream. Scoop up this winning duo with some nutritious rotis, a refreshing salad and tummy-cooling raita.\n\n- No hormones, no steroids, no antibiotics chicken\n- Lean, high-protein chicken breast\n- Fibre-rich bhindi masala\n- 100% whole wheat rotis\n- Digestion-aiding spices\n- Low-fat yogurt raita\n\nServed with the superfood of the day.\n\nAllergen Information: Contains gluten, mustard, seeds, nuts and dairy.",
+            "calories": 696,
+            "protein": 44,
+            "fat": 20,
+            "carbs": 83,
+            "fiber": 25,
+            "price": 130,
+            "is_veg": True
+        },
+        {
+            "id": 15,
+            "name": "Nutty Dates Pudding",
+            "url": "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_485,f_auto,ar_485:605,c_fit,q_auto:eco/dpr_2/image/singles/eat/meals/EAT2585/2.jpg",
+            "description": "Deliciously indulgent with superfoods like dates, almonds, cashews and raisins, some healthy broken wheat and sweetness from jaggery make this pudding hard to resist. All yummm, no guilt—order it now!\n- No refined sugars\n- High fiber broken wheat\n- Superfood nuts\n\nAllergen Information: Contains gluten, nuts and dairy.",
+            "calories": 299,
+            "protein": 6,
+            "fat": 14,
+            "carbs": 38,
+            "fiber": 3,
+            "price": 100,
+            "is_veg": True
+        },
+        {
+            "id": 16,
+            "name": "Masala Egg Curry & Tawa Paranthas Meal",
+            "url": "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_485,f_auto,ar_485:605,c_fit,q_auto:eco/dpr_2/image/singles/eat/meals/EAT4231/3.jpg",
+            "description": "The perfect homestyle treat, enjoy this masala egg curry based in an onion-tomato gravy that's thickened with the goodness of cashew. It's paired with soft tawa paranthas, some pickled onions and a green chilli.\n\n- Protein-rich eggs\n- Mildly spiced homestyle curry\n- 100% whole wheat paranthas\n\nAllergen Information: Contains eggs, gluten, vinegar and nuts.",
+            "calories": 662,
+            "protein": 28,
+            "fat": 28,
+            "carbs": 73,
+            "fiber": 16,
+            "price": 120,
+            "is_veg": False
+        },
+        {
+            "id": 17,
+            "name": "Pindi Chole Kulche",
+            "url": "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_485,f_auto,ar_485:605,c_fit,q_auto:eco/dpr_2/image/singles/eat/meals/EAT4474/4.jpg",
+            "description": "A real treat from chaat street, it's always a good time to dig into some chole kulche! Packed with protein, the tangy, spicy, juicy mix of pindi chole flavoured with anardana and amchur has been paired with with whole wheat kulche. Mouth watering already? Order now!",
+            "calories": 479,
+            "protein": 18,
+            "fat": 12,
+            "carbs": 75,
+            "fiber": 20,
+            "price": 110,
+            "is_veg": True
+        }, {
+            "id": 18,
+            "name": "Chicken Thai Green Curry & Rice",
+            "url": "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_485,f_auto,ar_485:605,c_fit,q_auto:eco/dpr_2/image/singles/eat/meals/EAT4063/2.jpg",
+            "description": "Flavoured with basil, lemongrass and galangal, the aromatic Thai green coconut curry is an all-time favourite. And, we're serving it up with succulent pieces of chicken, and vegetables like zucchini, carrots, mushrooms, beans and baby corn. It's paired with a Thai-style wok-tossed rice with carrots, beans and spring onion.\n- Steroids and antibiotics-free chicken\n- Lean, high-protein chicken breast\n- High-fibre brown rice\n- Coconut milk rich in good fats\n- Immunity-boosting vegetables\n\nServed with the superfood of the day.\n\nAllergen Information: Contains mushrooms, soybean and nuts. Traces of celery.",
+            "calories": 656,
+            "protein": 35,
+            "fat": 24,
+            "carbs": 69,
+            "fiber": 8,
+            "price": 140,
+            "is_veg": False
+        },
     ]
 
     for food in foods:
@@ -258,31 +387,58 @@ def insertTrainingData():
             "name": "activity",
             "food": {
                 "breakfast": [{
-                    "id": 2,
-                    "calories_low": 100,
-                    "calories_high": 1000,
-                }, {
-                    "id": 6,
-                    "calories_low": 500,
+                    "id": 9,
+                    "calories_low": 1500,
                     "calories_high": 2000,
-                }],
+                }, {
+                    "id": 10,
+                    "calories_low": 1500,
+                    "calories_high": 2000,
+                },
+                    {
+                        "id": 2,
+                        "calories_low": 100,
+                        "calories_high": 1500,
+                    },
+                    {
+                        "id": 15,
+                        "calories_low": 100,
+                        "calories_high": 1500,
+                    }
+                ],
                 "lunch": [{
-                    "id": 3,
-                    "calories_low": 100,
-                    "calories_high": 1000,
-                }, {
-                    "id": 7,
-                    "calories_low": 500,
+                    "id": 11,
+                    "calories_low": 1500,
                     "calories_high": 2000,
-                }],
-                "dinner": [{
-                    "id": 8,
+                }, {
+                    "id": 12,
+                    "calories_low": 1500,
+                    "calories_high": 2000,
+                }, {
+                    "id": 5,
                     "calories_low": 100,
                     "calories_high": 1500,
                 }, {
-                    "id": 5,
-                    "calories_low": 500,
+                    "id": 16,
+                    "calories_low": 100,
+                    "calories_high": 1500,
+                }],
+                "dinner": [{
+                    "id": 13,
+                    "calories_low": 1500,
                     "calories_high": 2000,
+                }, {
+                    "id": 14,
+                    "calories_low": 1500,
+                    "calories_high": 2000,
+                }, {
+                    "id": 17,
+                    "calories_low": 100,
+                    "calories_high": 1500,
+                }, {
+                    "id": 18,
+                    "calories_low": 100,
+                    "calories_high": 1500,
                 }]
             }
         }
