@@ -58,6 +58,8 @@ extension BookAMealController: UICollectionViewDataSource {
         unWrappedCell.setPrice(dataSource.getPrice(section))
         unWrappedCell.setCalories(dataSource.getCaleroies(section))
         unWrappedCell.setUpTitleAndType(dataSource.getIsVegAndTItle(section))
+        unWrappedCell.food = dataSource.getFood(section)
+        unWrappedCell.delegate = self
         return unWrappedCell
     }
 }
@@ -65,5 +67,14 @@ extension BookAMealController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = UIScreen.main.bounds.size.width
         return CGSize(width: width, height: 150)
+    }
+}
+
+extension BookAMealController: SelectFoodCellProtocol {
+    func optButtonSelectedWith(food: FoodModelProtocol) {
+        print("food",food)
+        let vcTabController = UIStoryboard.getViewControllerWithId(StoryBoardNames.Food, ControllerIds.suggestMealController) as! SuggestMealController
+        vcTabController.food = food
+        self.navigationController?.pushViewController(vcTabController, animated: false)
     }
 }

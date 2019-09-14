@@ -14,6 +14,7 @@ class SuggestMealController: UIViewController ,UITextFieldDelegate,UIPickerViewD
     var arrIllness = ["fever","cold","none"]
     
    var arrFoodType = ["breakfast","Lunch","Dinner"]
+    var food:FoodModelProtocol?
     var isIllnessSelected:Bool = true
     
     @IBOutlet weak var calorieTxtField: UITextField!
@@ -88,6 +89,7 @@ class SuggestMealController: UIViewController ,UITextFieldDelegate,UIPickerViewD
     }
     
     @IBAction func suggestMealAPICall(_ sender: Any) {
+        
         var illness:Int = 3
         var foodTime:Int = 1
         for x in 0..<arrFoodType.count{
@@ -102,12 +104,18 @@ class SuggestMealController: UIViewController ,UITextFieldDelegate,UIPickerViewD
                 break
             }
         }
-        let params = [
-            "calories" : Int(calorieTxtField.text ?? "100"),
-            "sleeptime": Int(sleepTypeTxtfield.text ?? "100"),
+        let params: [String:Any] = [
+            "calories" : Int(calorieTxtField.text ?? "100") ?? 100,
+            "sleeptime": Float(sleepTypeTxtfield.text ?? "100") ?? 7.3,
             "illness": illness,
             "foodtime": foodTime
         ]
+        
+        if(food != nil) {
+            updateMe(params: params)
+            return
+        }
+        
         let  urlstring = "http://10.71.164.4:8000/data/suggestme/"
         
         if let url = URL(string:urlstring){
@@ -129,6 +137,32 @@ class SuggestMealController: UIViewController ,UITextFieldDelegate,UIPickerViewD
         }
         
     }
+    
+    func updateMe(params:[String:Any]) {
+        var params = params
+        params["food_id"] = food!.food_id
+        
+        let  urlstring = "http://10.71.164.4:8000/data/updateme/"
+        
+        if let url = URL(string:urlstring){
+            let request = NSMutableURLRequest(url: url)
+            do {
+                request.httpBody = try JSONSerialization.data(withJSONObject:params, options: .prettyPrinted)
+            }
+            catch{}
+            request.httpMethod = "POST"
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            NetWorking.commonServiceCall(urlRequest: request as URLRequest) { (response: Any?, error:Error?) in
+                if let unWrappedResponse = response as? [String: Any] {
+                    print("unWrappedResponse",unWrappedResponse)
+                    DispatchQueue.main.async {
+                    }
+                }
+            }
+            
+        }
+    }
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }

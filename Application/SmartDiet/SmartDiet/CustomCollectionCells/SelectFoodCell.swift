@@ -9,6 +9,10 @@
 import UIKit
 import SDWebImage
 
+protocol SelectFoodCellProtocol {
+    func optButtonSelectedWith(food:FoodModelProtocol)
+}
+
 final class SelectFoodCell: UICollectionViewCell {
 
     //MARK: IBoutlets
@@ -20,12 +24,21 @@ final class SelectFoodCell: UICollectionViewCell {
     @IBOutlet weak var labelPrice: UILabel!
     @IBOutlet weak var buttonAdd: UIButton!
     
+    var food:FoodModelProtocol?
+    var delegate:SelectFoodCellProtocol?
+    
+    @IBOutlet weak var buttonOpt: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         buttonAdd.layer.borderColor = UIColor(red: 196.0/255.0, green: 196.0/255.0, blue: 196.0/255.0, alpha: 1.0).cgColor
         buttonAdd.layer.borderWidth = 1
         buttonAdd.layer.cornerRadius = 15
+        
         leftView.layer.cornerRadius = 10
+        
+        buttonOpt.layer.borderColor = UIColor(red: 196.0/255.0, green: 196.0/255.0, blue: 196.0/255.0, alpha: 1.0).cgColor
+        buttonOpt.layer.borderWidth = 1
+        buttonOpt.layer.cornerRadius = 15
     }
     func setUrl(_ url: URL?) {
         self.imageViewThumbnail.sd_setImage(with: url, completed: nil)
@@ -45,6 +58,10 @@ final class SelectFoodCell: UICollectionViewCell {
  
     @IBAction func buttonActionAdd(_ sender: UIButton) {
         
+    }
+    
+    @IBAction func optButtonAction(_ sender: Any) {
+        delegate?.optButtonSelectedWith(food: food!)
     }
 }
 
