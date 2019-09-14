@@ -8,7 +8,3 @@
 
 import UIKit
 
-
-typealias SelectAFoodCell = UICollectionViewCell & FoodCellProtocol
-
-typealias FoodTypeView = UIView & FoodTypeProtocol

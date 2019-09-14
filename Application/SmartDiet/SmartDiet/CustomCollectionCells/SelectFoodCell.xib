@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -128,13 +127,9 @@
                 <outlet property="imageViewThumbnail" destination="hSi-Fv-DGu" id="RXm-fm-ypy"/>
                 <outlet property="labelCalories" destination="b5n-SI-1bp" id="haX-A3-hjD"/>
                 <outlet property="labelPrice" destination="Dba-6j-fjk" id="NuY-zF-dIE"/>
+                <outlet property="viewFoodName" destination="Zin-MZ-a6J" id="Beq-sp-3xK"/>
             </connections>
             <point key="canvasLocation" x="150.72463768115944" y="82.366071428571431"/>
         </collectionViewCell>
-        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9ql-pN-Ub4">
-            <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <state key="normal" title="Button"/>
-        </button>
     </objects>
 </document>
