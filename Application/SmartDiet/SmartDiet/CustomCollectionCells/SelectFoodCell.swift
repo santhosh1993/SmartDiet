@@ -6,4 +6,15 @@
 //  Copyright © 2019 Epam. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+final class SelectFoodCell: UICollectionViewCell {
+
+    // IBoutlets
+    @IBOutlet weak var imageViewThumbnail: UIImage!
+    @IBOutlet weak var 
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+
+}
