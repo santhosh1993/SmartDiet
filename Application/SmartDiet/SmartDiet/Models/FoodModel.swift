@@ -8,20 +8,27 @@
 
 import Foundation
 
-struct FoodModel: FoodModelProtocol {
+struct FoodModel: FoodModelProtocol, Codable {
     
-    var calories: Int32
-    var foodItem: FoodItemProtocol
-    var price: Int32
-    var thumbnailUrl: String
-    
+    var food_id: Int
+    var name: String
+    var calories: String
+    var description: String
+    var is_veg: Bool
+    var image_url: String
+    var price: String
+    var protein: Int
+    var fat: Int
+    var carbs: Int
+    var fiber: Int
+
     func getPrice() -> String {
-        return "\(self.price)"
+        return "₹\(self.price)"
     }
     func getCaleroies() -> String {
-        return "\(self.calories)"
+        return "\(self.calories) Cal"
     }
     func getThumbnailUrl() -> URL? {
-        return URL(string: self.thumbnailUrl)
+        return URL(string: self.image_url)
     }
 }

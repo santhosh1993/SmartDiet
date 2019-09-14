@@ -8,7 +8,7 @@
 
 import Foundation
 
-let MAIN_URL = "http://10.71.164.4:8000"
+let MAIN_URL = "http://10.71.164.4:8000/"
 
 struct ReuseIdentifiers {
     static let selectFoodCell = "SelectFoodCell"
