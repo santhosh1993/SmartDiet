@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -52,15 +52,27 @@
                                         <color key="textColor" red="0.51764705882352935" green="0.51764705882352935" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbx-fs-HAo">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZlF-Cd-Wgu">
+                                        <rect key="frame" x="136" y="42" width="80" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="ClK-As-ijI"/>
+                                            <constraint firstAttribute="width" constant="80" id="r97-fo-hxo"/>
+                                        </constraints>
+                                        <state key="normal" title="Opt">
+                                            <color key="titleColor" red="0.0" green="0.62096911668777466" blue="0.70171171426773071" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="optButtonAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="H1k-Rj-6qH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbx-fs-HAo">
                                         <rect key="frame" x="136" y="86" width="80" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="8Ev-a3-rnB"/>
                                             <constraint firstAttribute="height" constant="34" id="RO8-JM-ak2"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
                                         <state key="normal" title="Add">
-                                            <color key="titleColor" red="0.10196078431372549" green="0.61176470588235299" blue="0.69019607843137254" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.0" green="0.62096911668777466" blue="0.70171171426773071" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="buttonActionAdd:" destination="gTV-IL-0wX" eventType="touchUpInside" id="oan-TY-OBu"/>
@@ -79,8 +91,11 @@
                                     <constraint firstItem="Zin-MZ-a6J" firstAttribute="top" secondItem="al6-3I-UFh" secondAttribute="top" id="4oe-yz-xaY"/>
                                     <constraint firstItem="b5n-SI-1bp" firstAttribute="top" secondItem="Zin-MZ-a6J" secondAttribute="bottom" constant="10" id="EyB-0t-d8y"/>
                                     <constraint firstItem="bbx-fs-HAo" firstAttribute="leading" secondItem="Dba-6j-fjk" secondAttribute="trailing" constant="10" id="K83-eY-hEr"/>
+                                    <constraint firstItem="ZlF-Cd-Wgu" firstAttribute="trailing" secondItem="bbx-fs-HAo" secondAttribute="trailing" id="PTx-N0-Pmc"/>
+                                    <constraint firstItem="bbx-fs-HAo" firstAttribute="top" secondItem="ZlF-Cd-Wgu" secondAttribute="bottom" constant="10" id="UU1-vl-oT4"/>
                                     <constraint firstAttribute="trailing" secondItem="bbx-fs-HAo" secondAttribute="trailing" id="WC5-pQ-2Xi"/>
                                     <constraint firstItem="Dba-6j-fjk" firstAttribute="centerY" secondItem="bbx-fs-HAo" secondAttribute="centerY" id="YI1-I7-sXm"/>
+                                    <constraint firstItem="ZlF-Cd-Wgu" firstAttribute="leading" secondItem="bbx-fs-HAo" secondAttribute="leading" id="gKM-Zu-toF"/>
                                     <constraint firstItem="b5n-SI-1bp" firstAttribute="leading" secondItem="al6-3I-UFh" secondAttribute="leading" id="tMz-3X-eCS"/>
                                     <constraint firstAttribute="trailing" secondItem="Zin-MZ-a6J" secondAttribute="trailing" id="ux5-qL-quC"/>
                                     <constraint firstAttribute="trailing" secondItem="b5n-SI-1bp" secondAttribute="trailing" id="w0z-z3-BeE"/>
@@ -127,6 +142,7 @@
             <size key="customSize" width="430" height="178"/>
             <connections>
                 <outlet property="buttonAdd" destination="bbx-fs-HAo" id="pYe-Gk-2Hx"/>
+                <outlet property="buttonOpt" destination="ZlF-Cd-Wgu" id="Pu0-8k-RZo"/>
                 <outlet property="imageViewThumbnail" destination="hSi-Fv-DGu" id="RXm-fm-ypy"/>
                 <outlet property="labelCalories" destination="b5n-SI-1bp" id="haX-A3-hjD"/>
                 <outlet property="labelPrice" destination="Dba-6j-fjk" id="NuY-zF-dIE"/>
