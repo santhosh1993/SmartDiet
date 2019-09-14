@@ -159,25 +159,7 @@ def insertFood():
             "price": 120,
             "is_veg": False
         },
-        {
-            "id": 9,
-            "name": "Chicken Chettinad & Tawa Paranthas",
-            "url": "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_485,f_auto,ar_485:605,c_fit,q_auto:eco/dpr_2/image/singles/eat/meals/EAT4230/2.jpg",
-            "description": "A classic from the Southern region, our delicious main has tender pieces of chicken cooked"
-                           " in chettinad masala that revels in chillies, coriander seeds, pepper corn, coconut milk"
-                           " and aromats like cinnamon and cloves. The rich thick gravy can be scooped up with soft "
-                           "tawa paranthas as you enjoy a side of pickled onions and green chilli.\n\n"
-                           "- 100% whole wheat paranthas\n- No hormones, no steroids, no antibiotics chicken\n"
-                           "- Lean, high-protein chicken breast\n- In-house freshly made chettinad base\n\n"
-                           "Allergen Information: Contains gluten, mustard seeds, nuts, vinegar, and dairy.",
-            "calories": 674,
-            "protein": 37,
-            "fat": 24,
-            "carbs": 72,
-            "fiber": 20,
-            "price": 120,
-            "is_veg": False
-        },
+        
     ]
 
     for food in foods:
@@ -198,7 +180,8 @@ def insertFood():
 def insertIllnessData():
     illnesses = [
          "fever",
-         "cold"
+         "cold",
+         "activity",
     ]
     for illness in illnesses:
         illnessIn = Illness()
@@ -234,6 +217,70 @@ def insertTrainingData():
                     "calories_high": 1500,
                 }, {
                     "id": 4,
+                    "calories_low": 500,
+                    "calories_high": 2000,
+                }]
+            }
+        },
+        {
+            "name": "cold",
+            "food": {
+                "breakfast": [{
+                    "id": 2,
+                    "calories_low": 100,
+                    "calories_high": 1000,
+                }, {
+                    "id": 6,
+                    "calories_low": 500,
+                    "calories_high": 2000,
+                }],
+                "lunch": [{
+                    "id": 3,
+                    "calories_low": 100,
+                    "calories_high": 1000,
+                }, {
+                    "id": 7,
+                    "calories_low": 500,
+                    "calories_high": 2000,
+                }],
+                "dinner": [{
+                    "id": 8,
+                    "calories_low": 100,
+                    "calories_high": 1500,
+                }, {
+                    "id": 5,
+                    "calories_low": 500,
+                    "calories_high": 2000,
+                }]
+            }
+        },
+        {
+            "name": "activity",
+            "food": {
+                "breakfast": [{
+                    "id": 2,
+                    "calories_low": 100,
+                    "calories_high": 1000,
+                }, {
+                    "id": 6,
+                    "calories_low": 500,
+                    "calories_high": 2000,
+                }],
+                "lunch": [{
+                    "id": 3,
+                    "calories_low": 100,
+                    "calories_high": 1000,
+                }, {
+                    "id": 7,
+                    "calories_low": 500,
+                    "calories_high": 2000,
+                }],
+                "dinner": [{
+                    "id": 8,
+                    "calories_low": 100,
+                    "calories_high": 1500,
+                }, {
+                    "id": 5,
                     "calories_low": 500,
                     "calories_high": 2000,
                 }]

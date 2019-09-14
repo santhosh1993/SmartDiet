@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e080444a-6e7b-4120-8676-5ea37295f266" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SmartDietUser/api_views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartDietUser/serializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartDiet/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/SmartDiet/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartDietUser/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/SmartDietUser/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartDietUser/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/SmartDietUser/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DummyData/DummyData.py" beforeDir="false" afterPath="$PROJECT_DIR$/DummyData/DummyData.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SmartDietUser/serializer.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
-              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+              <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -104,11 +99,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DummyData/DummyData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
-              <caret line="161" column="9" selection-start-line="161" selection-start-column="9" selection-end-line="161" selection-end-column="9" />
+            <state relative-caret-position="553">
+              <caret line="254" column="8" selection-start-line="254" selection-start-column="8" selection-end-line="254" selection-end-column="8" />
+              <folding>
+                <element signature="e#11869#12834#0" />
+                <element signature="e#11594#12558#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -149,7 +148,6 @@
         <option value="$PROJECT_DIR$/DummyData/views.py" />
         <option value="$PROJECT_DIR$/DummyData/serializers.py" />
         <option value="$PROJECT_DIR$/DummyData/urls.py" />
-        <option value="$PROJECT_DIR$/DummyData/DummyData.py" />
         <option value="$PROJECT_DIR$/DummyData/api_views.py" />
         <option value="$PROJECT_DIR$/SmartDietUser/admin.py" />
         <option value="$PROJECT_DIR$/SmartDiet/settings.py" />
@@ -158,6 +156,7 @@
         <option value="$PROJECT_DIR$/SmartDiet/urls.py" />
         <option value="$PROJECT_DIR$/SmartDietUser/api_views.py" />
         <option value="$PROJECT_DIR$/SmartDietUser/serializer.py" />
+        <option value="$PROJECT_DIR$/DummyData/DummyData.py" />
       </list>
     </option>
   </component>
@@ -330,20 +329,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DummyData/DummyData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="161" column="9" selection-start-line="161" selection-start-column="9" selection-end-line="161" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartDietUser/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SmartDietUser/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -398,6 +383,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SmartDietUser/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartDietUser/serializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SmartDietUser/api_views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
@@ -408,12 +410,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SmartDietUser/serializer.py">
+    <entry file="file://$PROJECT_DIR$/DummyData/DummyData.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        <state relative-caret-position="553">
+          <caret line="254" column="8" selection-start-line="254" selection-start-column="8" selection-end-line="254" selection-end-column="8" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#11869#12834#0" />
+            <element signature="e#11594#12558#0" />
           </folding>
         </state>
       </provider>
