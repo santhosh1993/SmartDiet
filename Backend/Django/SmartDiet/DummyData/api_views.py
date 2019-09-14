@@ -13,6 +13,8 @@ from rest_framework.status import (
     HTTP_200_OK
 )
 
+
+
 class FoodList(ListAPIView):
     queryset = Food.objects.all()
     serializer_class = FoodSerializer
@@ -27,15 +29,18 @@ class SuggestAMealAPIView(APIView):
         illness = request.data.get('illness')
         foodtime = request.data.get('foodtime')
 
-        new_model = keras.models.load_model('my_model.h5')
+        new_model = keras.models.load_model(
+            '/Users/santhosh_nampally/Projects/smartdiet/Backend/Django/SmartDiet/DummyData/my_model.h5')
         classifications = new_model.predict([[calories, sleeptime, illness, foodtime]])
         result = (classifications > 0.5).astype(np.int)
         value = np.where(result[0] == 1)[0][0]
-
+        print(value)
+        print(result)
+        print("******")
         food = Food.objects.filter(food_id=value)
 
         if food.exists():
-            return Response(FoodSerializer(food).data)
+            return Response(FoodSerializer(food.get()).data)
         else:
             return Response({"message": "We could not suggest you this time", "status_code": 2002}, HTTP_200_OK)
 

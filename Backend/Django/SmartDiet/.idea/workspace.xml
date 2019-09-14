@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e080444a-6e7b-4120-8676-5ea37295f266" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../TensorFlow/.idea/TensorFlow.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TensorFlow/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TensorFlow/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TensorFlow/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TensorFlow/ModelTesting.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TensorFlow/SuggestAMeal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DummyData/api_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/DummyData/api_views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DummyData/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DummyData/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TensorFlow/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TensorFlow/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TensorFlow/ModelTesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../TensorFlow/ModelTesting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TensorFlow/SuggestAMeal.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../TensorFlow/SuggestAMeal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TensorFlow/my_model.h5" beforeDir="false" afterPath="$PROJECT_DIR$/../../TensorFlow/my_model.h5" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,8 +32,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DummyData/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="-264">
               <caret line="5" column="11" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="11" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DummyData/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -77,7 +86,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DummyData/DummyData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5810">
+            <state relative-caret-position="-6988">
               <caret line="145" column="57" selection-start-line="145" selection-start-column="57" selection-end-line="145" selection-end-column="57" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
@@ -108,8 +117,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DummyData/api_views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="500">
+              <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
               </folding>
@@ -139,7 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/DummyData/urls.py" />
         <option value="$PROJECT_DIR$/SmartDietUser/admin.py" />
         <option value="$PROJECT_DIR$/SmartDiet/settings.py" />
         <option value="$PROJECT_DIR$/SmartDietUser/models.py" />
@@ -151,6 +159,7 @@
         <option value="$PROJECT_DIR$/DummyData/DummyData.py" />
         <option value="$PROJECT_DIR$/DummyData/views.py" />
         <option value="$PROJECT_DIR$/DummyData/serializers.py" />
+        <option value="$PROJECT_DIR$/DummyData/urls.py" />
         <option value="$PROJECT_DIR$/DummyData/api_views.py" />
       </list>
     </option>
@@ -316,16 +325,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DummyData/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SmartDietUser/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -346,25 +345,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DummyData/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/DummyData/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/DummyData/DummyData.py">
+    <entry file="file://$PROJECT_DIR$/DummyData/apps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5810">
-          <caret line="145" column="57" selection-start-line="145" selection-start-column="57" selection-end-line="145" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-            <element signature="e#11869#12834#0" />
-            <element signature="e#11594#12558#0" />
-          </folding>
+        <state relative-caret-position="81">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -375,15 +362,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DummyData/apps.py">
+    <entry file="file://$PROJECT_DIR$/DummyData/DummyData.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="21" />
+        <state relative-caret-position="-6988">
+          <caret line="145" column="57" selection-start-line="145" selection-start-column="57" selection-end-line="145" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+            <element signature="e#11869#12834#0" />
+            <element signature="e#11594#12558#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DummyData/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/DummyData/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-264">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DummyData/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DummyData/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DummyData/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -395,20 +414,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DummyData/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DummyData/api_views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="500">
+          <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
           </folding>
