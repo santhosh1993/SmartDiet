@@ -27,6 +27,13 @@
 		9E46A8E3232CBC630037F4CD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8E2232CBC630037F4CD /* Constants.swift */; };
 		9E46A8E5232CC0930037F4CD /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8E4232CC0930037F4CD /* CustomButton.swift */; };
 		9E46A8E7232CC7B50037F4CD /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8E6232CC7B50037F4CD /* TypeAliases.swift */; };
+		9EE339E0232CE19E00D52128 /* BookAMealController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE339DF232CE19E00D52128 /* BookAMealController.swift */; };
+		9EE339E2232CE25D00D52128 /* BookAMealViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE339E1232CE25D00D52128 /* BookAMealViewModel.swift */; };
+		9EE339E4232CE27800D52128 /* BookAMealProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE339E3232CE27800D52128 /* BookAMealProtocols.swift */; };
+		9EE339E6232CE79600D52128 /* BookAMealNetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE339E5232CE79600D52128 /* BookAMealNetworkHandler.swift */; };
+		9EE339E8232CE87B00D52128 /* NetWorking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE339E7232CE87B00D52128 /* NetWorking.swift */; };
+		9EE339EA232CF0CE00D52128 /* Food.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EE339E9232CF0CE00D52128 /* Food.storyboard */; };
+		9EE339EC232CF14D00D52128 /* UIStoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE339EB232CF14D00D52128 /* UIStoryBoard.swift */; };
 		D929ED9F232CC1E80084FB68 /* SDLogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929ED9E232CC1E80084FB68 /* SDLogInController.swift */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +83,13 @@
 		9E46A8E2232CBC630037F4CD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9E46A8E4232CC0930037F4CD /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		9E46A8E6232CC7B50037F4CD /* TypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
+		9EE339DF232CE19E00D52128 /* BookAMealController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAMealController.swift; sourceTree = "<group>"; };
+		9EE339E1232CE25D00D52128 /* BookAMealViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAMealViewModel.swift; sourceTree = "<group>"; };
+		9EE339E3232CE27800D52128 /* BookAMealProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAMealProtocols.swift; sourceTree = "<group>"; };
+		9EE339E5232CE79600D52128 /* BookAMealNetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAMealNetworkHandler.swift; sourceTree = "<group>"; };
+		9EE339E7232CE87B00D52128 /* NetWorking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorking.swift; sourceTree = "<group>"; };
+		9EE339E9232CF0CE00D52128 /* Food.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Food.storyboard; sourceTree = "<group>"; };
+		9EE339EB232CF14D00D52128 /* UIStoryBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryBoard.swift; sourceTree = "<group>"; };
 		B1BDAEDBE23267C0D534AF5D /* Pods-SmartDiet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDiet.release.xcconfig"; path = "Target Support Files/Pods-SmartDiet/Pods-SmartDiet.release.xcconfig"; sourceTree = "<group>"; };
 		CB8F06AD921F967760865BCB /* Pods_SmartDietUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartDietUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D929ED9E232CC1E80084FB68 /* SDLogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDLogInController.swift; sourceTree = "<group>"; };
@@ -160,6 +174,9 @@
 			isa = PBXGroup;
 			children = (
 				9E46A899232CA8950037F4CD /* AppDelegate.swift */,
+
+				9E46A8CD232CAD950037F4CD /* ViewController.swift */,
+				9EE339DE232CE0D300D52128 /* BookAMeal */,
 				D929ED9D232CC1D00084FB68 /* LogIn */,
 				9E46A8CA232CAC5D0037F4CD /* CustomCollectionCells */,
 				9E46A8D3232CAF480037F4CD /* CustomComponents */,
@@ -173,6 +190,8 @@
 				9E46A8A8232CA8960037F4CD /* Info.plist */,
 				9E46A8A0232CA8950037F4CD /* SmartDiet.xcdatamodeld */,
 				9E46A8E6232CC7B50037F4CD /* TypeAliases.swift */,
+				9EE339E7232CE87B00D52128 /* NetWorking.swift */,
+				9EE339E9232CF0CE00D52128 /* Food.storyboard */,
 			);
 			path = SmartDiet;
 			sourceTree = "<group>";
@@ -218,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				9E46A8D7232CAFE70037F4CD /* UIViewExtension.swift */,
+				9EE339EB232CF14D00D52128 /* UIStoryBoard.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -234,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				9E46A8DF232CB76B0037F4CD /* FoodPtotocols.swift */,
+				9EE339E3232CE27800D52128 /* BookAMealProtocols.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -244,6 +265,16 @@
 				9E46A8E2232CBC630037F4CD /* Constants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		9EE339DE232CE0D300D52128 /* BookAMeal */ = {
+			isa = PBXGroup;
+			children = (
+				9EE339DF232CE19E00D52128 /* BookAMealController.swift */,
+				9EE339E1232CE25D00D52128 /* BookAMealViewModel.swift */,
+				9EE339E5232CE79600D52128 /* BookAMealNetworkHandler.swift */,
+			);
+			path = BookAMeal;
 			sourceTree = "<group>";
 		};
 		D929ED9D232CC1D00084FB68 /* LogIn */ = {
@@ -362,6 +393,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EE339EA232CF0CE00D52128 /* Food.storyboard in Resources */,
 				9E46A8A7232CA8960037F4CD /* LaunchScreen.storyboard in Resources */,
 				9E46A8A4232CA8960037F4CD /* Assets.xcassets in Resources */,
 				9E46A89F232CA8950037F4CD /* Main.storyboard in Resources */,
@@ -477,16 +509,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EE339EC232CF14D00D52128 /* UIStoryBoard.swift in Sources */,
 				9E46A8D8232CAFE70037F4CD /* UIViewExtension.swift in Sources */,
+				9EE339E4232CE27800D52128 /* BookAMealProtocols.swift in Sources */,
 				9E46A8E5232CC0930037F4CD /* CustomButton.swift in Sources */,
 				9E46A8D5232CAFC50037F4CD /* FoodNameWithTypeView.swift in Sources */,
 				9E46A89A232CA8950037F4CD /* AppDelegate.swift in Sources */,
+				9EE339E6232CE79600D52128 /* BookAMealNetworkHandler.swift in Sources */,
 				9E46A8A2232CA8950037F4CD /* SmartDiet.xcdatamodeld in Sources */,
 				9E46A8E7232CC7B50037F4CD /* TypeAliases.swift in Sources */,
+		9EE339E8232CE87B00D52128 /* NetWorking.swift in Sources */,
+				9EE339E2232CE25D00D52128 /* BookAMealViewModel.swift in Sources */,
+				9E46A8CE232CAD950037F4CD /* ViewController.swift in Sources */,
 				9E46A8E0232CB76B0037F4CD /* FoodPtotocols.swift in Sources */,
 				9E46A8D1232CAEC30037F4CD /* SelectFoodCell.swift in Sources */,
 				9E46A8DD232CB6CB0037F4CD /* FoodModel.swift in Sources */,
 				D929ED9F232CC1E80084FB68 /* SDLogInController.swift in Sources */,
+				9EE339E0232CE19E00D52128 /* BookAMealController.swift in Sources */,
 				9E46A8E3232CBC630037F4CD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

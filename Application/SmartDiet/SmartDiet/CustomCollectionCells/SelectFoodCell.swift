@@ -7,23 +7,36 @@
 //
 
 import UIKit
+import SDWebImage
 
-final class SelectFoodCell: UICollectionViewCell, FoodCellProtocol {
+final class SelectFoodCell: UICollectionViewCell {
 
     //MARK: IBoutlets
     
     @IBOutlet weak var imageViewThumbnail: UIImageView!
-    var viewFoodName: FoodTypeView!
+    @IBOutlet var viewFoodName: FoodNameWithTypeView!
     @IBOutlet weak var labelCalories: UILabel!
     @IBOutlet weak var labelPrice: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        viewFoodName = self.viewWithTag(100) as? FoodTypeView
     }
-
+    func setUrl(_ url: URL?) {
+        self.imageViewThumbnail.sd_setImage(with: url, completed: nil)
+    }
+    func setUpTitleAndType(_ data: (Bool, String)) {
+        let imageName = data.0 == true ? Images.veg : Images.nonVeg
+        self.viewFoodName.imageVegOrNonveg.image = UIImage(named: imageName)
+        self.viewFoodName.labelFoodName.text = data.1
+    }
+    func setPrice(_ price: String) {
+        self.labelPrice.text = price
+    }
+    func setCalories(_ calories: String) {
+        self.labelCalories.text = calories
+    }
     //MARK: IBActions
-    
+ 
     @IBAction func buttonActionAdd(_ sender: UIButton) {
         
     }

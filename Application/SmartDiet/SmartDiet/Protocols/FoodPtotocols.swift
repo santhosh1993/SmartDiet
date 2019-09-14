@@ -17,20 +17,11 @@ protocol FoodItemProtocol {
     var foodType: FoodType { get set }
 }
 protocol FoodModelProtocol {
-    var foodItem: FoodItemProtocol { get set }
-    var calories: Int32 { get set }
-    var price: Int32 { get set }
+    var foodItem: FoodItemProtocol { get }
+    var calories: Int32 { get }
+    var price: Int32 { get }
+    var thumbnailUrl: String { get }
     func getPrice() -> String
     func getCaleroies() -> String
-}
-protocol FoodCellProtocol {
-    var imageViewThumbnail: UIImageView!{ get }
-    var viewFoodName: FoodTypeView! { get }
-    var labelCalories: UILabel! { get }
-    var labelPrice: UILabel! { get }
-    func buttonActionAdd(_ sender: UIButton)
-}
-protocol FoodTypeProtocol {
-    var labelFoodName: UILabel! { get }
-    var imageVegOrNonveg: UIImageView! { get }
+    func getThumbnailUrl() -> URL?
 }
