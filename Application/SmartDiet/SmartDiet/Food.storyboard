@@ -32,10 +32,36 @@
                     <view key="view" contentMode="scaleToFill" id="c2g-FY-Taz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="a1g-1e-QSG">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LWr-oN-Gb2">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Shk-XW-ACo" id="Rti-ga-vGL"/>
+                                    <outlet property="delegate" destination="Shk-XW-ACo" id="e7l-bl-tS3"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a1g-1e-QSG" firstAttribute="top" secondItem="vPh-pa-YHT" secondAttribute="top" id="CRL-z9-thQ"/>
+                            <constraint firstItem="a1g-1e-QSG" firstAttribute="bottom" secondItem="vPh-pa-YHT" secondAttribute="bottom" id="U7B-dw-Kse"/>
+                            <constraint firstItem="a1g-1e-QSG" firstAttribute="leading" secondItem="vPh-pa-YHT" secondAttribute="leading" id="c3j-cg-PR7"/>
+                            <constraint firstItem="a1g-1e-QSG" firstAttribute="trailing" secondItem="vPh-pa-YHT" secondAttribute="trailing" id="vLW-kn-SG9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vPh-pa-YHT"/>
                     </view>
                     <navigationItem key="navigationItem" title="BookAMeal" id="rN8-YB-C22"/>
+                    <connections>
+                        <outlet property="collectionView" destination="a1g-1e-QSG" id="uF6-aF-am3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SF5-iz-O4n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -13,6 +13,9 @@ let MAIN_URL = "http://10.71.164.4:8000"
 struct ReuseIdentifiers {
     static let selectFoodCell = "SelectFoodCell"
 }
+struct ControllerIds {
+    let tabBarController = "TabBarController"
+}
 struct Colors {
     let themeColor = "#1A9CB0"
 }
