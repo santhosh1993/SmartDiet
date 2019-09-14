@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class SDFoodName: UIView {
+final class FoodNameWithTypeView: UIView {
     
     //IBOutlets
     
@@ -20,5 +20,4 @@ final class SDFoodName: UIView {
         let viewFromXib =  self.getViewFromXibAndAddItAsSubView()
         if let unWrappedView = viewFromXib { self.addSubview(unWrappedView) }
     }
-    
 }

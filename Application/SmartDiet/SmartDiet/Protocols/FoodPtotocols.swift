@@ -6,7 +6,7 @@
 //  Copyright © 2019 Epam. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 enum FoodType: String {
     case veg
@@ -22,4 +22,15 @@ protocol FoodModelProtocol {
     var price: Int32 { get set }
     func getPrice() -> String
     func getCaleroies() -> String
+}
+protocol FoodCellProtocol {
+    var imageViewThumbnail: UIImageView!{ get }
+    var viewFoodName: FoodTypeView! { get }
+    var labelCalories: UILabel! { get }
+    var labelPrice: UILabel! { get }
+    func buttonActionAdd(_ sender: UIButton)
+}
+protocol FoodTypeProtocol {
+    var labelFoodName: UILabel! { get }
+    var imageVegOrNonveg: UIImageView! { get }
 }
