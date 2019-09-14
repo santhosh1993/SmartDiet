@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e080444a-6e7b-4120-8676-5ea37295f266" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/DummyData/api_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/DummyData/api_views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DummyData/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DummyData/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../TensorFlow/UpdateAMeal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../TensorFlow/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TensorFlow/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TensorFlow/ModelTesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../TensorFlow/ModelTesting.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../TensorFlow/SuggestAMeal.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../TensorFlow/SuggestAMeal.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../TensorFlow/my_model.h5" beforeDir="false" afterPath="$PROJECT_DIR$/../../TensorFlow/my_model.h5" afterDir="false" />
     </list>
@@ -117,8 +116,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DummyData/api_views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+            <state relative-caret-position="436">
+              <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
               </folding>
@@ -416,8 +415,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DummyData/api_views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        <state relative-caret-position="436">
+          <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
           </folding>

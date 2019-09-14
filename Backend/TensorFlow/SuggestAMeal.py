@@ -6,9 +6,9 @@ trainint_data = dataset[:, [1,2,3,5]]
 output_data = dataset[:,[4]]
 
 model = tf.keras.models.Sequential([tf.keras.layers.Dense(4, input_shape=(4,)),
-                                    tf.keras.layers.Dense(800, activation=tf.nn.relu),
-                                    tf.keras.layers.Dense(800, activation=tf.nn.relu),
-                                    tf.keras.layers.Dense(800, activation=tf.nn.relu),
+                                    tf.keras.layers.Dense(1000, activation=tf.nn.relu),
+                                    tf.keras.layers.Dense(1000, activation=tf.nn.relu),
+                                    tf.keras.layers.Dense(1000, activation=tf.nn.relu),
                                     tf.keras.layers.Dense(19, activation=tf.nn.softmax)])
 
 model.compile(optimizer = tf.optimizers.Adam(),
