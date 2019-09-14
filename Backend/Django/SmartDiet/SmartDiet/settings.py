@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'DummyData.apps.DummydataConfig',
     'rest_framework',
+    'SmartDietUser.apps.SmartdietuserConfig',
 ]
 
 MIDDLEWARE = [
