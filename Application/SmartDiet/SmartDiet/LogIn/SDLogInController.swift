@@ -32,12 +32,24 @@ removeSpinner(spinner: sv)
             "password":"swati123"
         ]
        var  urlstring = "http://10.71.164.4:8000/authenticate/login/"
+        
         if let url = URL(string:urlstring){
             var request = NSMutableURLRequest(url: url)
-            
-           // request.HTTPBody = JSONSerialization.dataWithJSONObject(params, options: nil)
-            
+            do{
+                request.httpBody = try JSONSerialization.data(withJSONObject:params, options: .prettyPrinted)
+            }
+            catch{
+                
+            }
+           request.httpMethod = "POST"
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            NetWorking.commonServiceCall(urlRequest: request as URLRequest) { (response: Any?, error:Error?) in
+                if let unWrappedResponse = response as? [String: Any] {
+                    print("unWrappedResponse",unWrappedResponse)
+                    //if let val =
+                }
+            }
+
             //let task = URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) in
 //                if let data = data {
 //                    if let stringData = String(data: data, encoding: String.Encoding.utf8) {
