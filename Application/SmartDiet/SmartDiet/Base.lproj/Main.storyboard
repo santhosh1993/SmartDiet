@@ -12,7 +12,7 @@
         <!--Log In Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SDLogInController" customModule="SmartDiet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SDLogInController" id="BYZ-38-t0r" customClass="SDLogInController" customModule="SmartDiet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,7 +28,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AjI-z0-FeS">
                                 <rect key="frame" x="40" y="631" width="334" height="50"/>
-                                <color key="backgroundColor" red="0.033001884818077087" green="0.91623997688293457" blue="0.97486919164657593" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.61960784313725492" blue="0.70196078431372544" alpha="0.79693001760563376" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="dD1-Jg-TgA"/>
                                 </constraints>

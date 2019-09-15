@@ -32,10 +32,18 @@ class SuggestMealController: UIViewController ,UITextFieldDelegate,UIPickerViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         picker = UIPickerView.init()
-
+        illenssButton.setTitle("fever", for: .normal)
+        foodTimeButton.setTitle("breakfast", for: .normal)
+        if(food != nil) {
+            arrIllness = ["fever","cold"]
+        }
         // Do any additional setup after loading the view.
     }
-    
+    @IBAction func backAction(_ sender: Any) {
+        if let navController = self.navigationController {
+            navController.popViewController(animated: true)
+        }
+    }
 
     @IBAction func illnessAction(_ sender: Any) {
         isIllnessSelected = true
@@ -66,12 +74,13 @@ class SuggestMealController: UIViewController ,UITextFieldDelegate,UIPickerViewD
         picker.setValue(UIColor.black, forKey: "textColor")
         picker.autoresizingMask = .flexibleWidth
         picker.contentMode = .center
-        picker.frame = CGRect.init(x: 0.0, y: UIScreen.main.bounds.size.height - 300, width: UIScreen.main.bounds.size.width, height: 300)
+        picker.frame = CGRect.init(x: 0.0, y: UIScreen.main.bounds.size.height - 200, width: UIScreen.main.bounds.size.width, height: 200)
         self.view.addSubview(picker)
         
-        toolBar = UIToolbar.init(frame: CGRect.init(x: 0.0, y: UIScreen.main.bounds.size.height - 300, width: UIScreen.main.bounds.size.width, height: 50))
-        toolBar.barStyle = .blackTranslucent
+        toolBar = UIToolbar.init(frame: CGRect.init(x: 0.0, y: UIScreen.main.bounds.size.height-200, width: UIScreen.main.bounds.size.width, height: 50))
+        toolBar.barStyle = .default
         toolBar.items = [UIBarButtonItem.init(title: "Done", style: .done, target: self, action: #selector(onDoneButtonTapped))]
+
         self.view.addSubview(toolBar)
     }
     @objc func onDoneButtonTapped() {
@@ -116,7 +125,7 @@ class SuggestMealController: UIViewController ,UITextFieldDelegate,UIPickerViewD
             return
         }
         
-        let  urlstring = "http://10.71.164.4:8000/data/suggestme/"
+        let  urlstring = MAIN_URL+"data/suggestme/"
         
         if let url = URL(string:urlstring){
             let request = NSMutableURLRequest(url: url)
@@ -130,6 +139,31 @@ class SuggestMealController: UIViewController ,UITextFieldDelegate,UIPickerViewD
                 if let unWrappedResponse = response as? [String: Any] {
                     print("unWrappedResponse",unWrappedResponse)
                     DispatchQueue.main.async {
+                        
+                            if let alertmessage:String = unWrappedResponse ["message"] as? String{
+                                
+                                let alert = UIAlertController(title: "Alert", message:alertmessage, preferredStyle: .alert)
+                                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                                    switch action.style{
+                                    case .default:
+                                        print("default")
+                                        
+                                    case .cancel:
+                                        print("cancel")
+                                        
+                                    case .destructive:
+                                        print("destructive")
+                                        
+                                        
+                                    }}))
+                                self.present(alert, animated: true, completion: nil)
+                            }else if (unWrappedResponse["food_id"] != nil){
+                                let controllerMealDetail = UIStoryboard.getViewControllerWithId(StoryBoardNames.Food, ControllerIds.MealDetailController) as! MealDetailController
+                                controllerMealDetail.dataSource = MealDetailViewModel(unWrappedResponse)
+                                _ = self.navigationController?.pushViewController(controllerMealDetail, animated: true)
+                        }
+                        
+                        
                     }
                 }
             }
@@ -142,7 +176,7 @@ class SuggestMealController: UIViewController ,UITextFieldDelegate,UIPickerViewD
         var params = params
         params["food_id"] = food!.food_id
         
-        let  urlstring = "http://10.71.164.4:8000/data/updateme/"
+        let  urlstring = MAIN_URL+"data/updateme/"
         
         if let url = URL(string:urlstring){
             let request = NSMutableURLRequest(url: url)
@@ -156,6 +190,24 @@ class SuggestMealController: UIViewController ,UITextFieldDelegate,UIPickerViewD
                 if let unWrappedResponse = response as? [String: Any] {
                     print("unWrappedResponse",unWrappedResponse)
                     DispatchQueue.main.async {
+                        if let alertmessage:String = unWrappedResponse ["message"] as? String{
+                        
+                        let alert = UIAlertController(title: "Alert", message:alertmessage, preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                            switch action.style{
+                            case .default:
+                                print("default")
+                                
+                            case .cancel:
+                                print("cancel")
+                                
+                            case .destructive:
+                                print("destructive")
+                                
+                                
+                            }}))
+                        self.present(alert, animated: true, completion: nil)
+                    }
                     }
                 }
             }

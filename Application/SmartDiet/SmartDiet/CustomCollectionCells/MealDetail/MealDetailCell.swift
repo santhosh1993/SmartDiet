@@ -11,9 +11,10 @@ import UIKit
 final class MealDetailCell: UICollectionViewCell {
 
     //IBOutlets
-    @IBOutlet weak var labelPrice: UILabel!
     @IBOutlet weak var viewFoodType: FoodNameWithTypeView!
     @IBOutlet weak var buttonAdd: UIButton!
+    @IBOutlet weak var labelPrice: UILabel!
+    var onTapAddClosure: (() -> ())?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,5 +31,9 @@ final class MealDetailCell: UICollectionViewCell {
     }
     func setPrice(_ price: String) {
         self.labelPrice.text = price
+    }    
+    //MARK: IBActions
+    @IBAction func onTapAdd(_ sender: UIButton) {
+        onTapAddClosure?()
     }
 }

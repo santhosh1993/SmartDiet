@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellCharts" id="gTV-IL-0wX" customClass="CellCharts" customModule="SmartDiet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m5H-1r-Gn6" customClass="PieChartView" customModule="Charts">
+                        <rect key="frame" x="87.5" y="47" width="200" height="200"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="Axx-DJ-Wh2"/>
+                            <constraint firstAttribute="width" constant="200" id="s5m-NX-RZS"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nutrition Info :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L68-EA-j6X">
+                        <rect key="frame" x="10" y="11" width="125" height="16"/>
+                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAR-rV-2zE">
+                        <rect key="frame" x="10" y="0.0" width="355" height="1"/>
+                        <color key="backgroundColor" red="0.79607843140000001" green="0.79607843140000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Wuj-Xr-ahi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="m5H-1r-Gn6" firstAttribute="top" secondItem="L68-EA-j6X" secondAttribute="bottom" constant="20" id="OUR-yg-kpk"/>
+                <constraint firstItem="L68-EA-j6X" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Wda-5A-Lp8"/>
+                <constraint firstAttribute="trailing" secondItem="AAR-rV-2zE" secondAttribute="trailing" constant="10" id="YPz-Ia-e2R"/>
+                <constraint firstItem="m5H-1r-Gn6" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="Yty-Jr-Rfv"/>
+                <constraint firstItem="AAR-rV-2zE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="ZeQ-iO-jHp"/>
+                <constraint firstItem="AAR-rV-2zE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jgt-DH-tmd"/>
+                <constraint firstItem="L68-EA-j6X" firstAttribute="top" secondItem="AAR-rV-2zE" secondAttribute="bottom" constant="10" id="xbU-dh-mJh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="364" height="252"/>
+            <connections>
+                <outlet property="pieChart" destination="m5H-1r-Gn6" id="HdA-gg-ju6"/>
+            </connections>
+            <point key="canvasLocation" x="190.57971014492756" y="100.44642857142857"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -22,9 +22,8 @@ class SDLogInController: UIViewController,UITextFieldDelegate{
     @IBAction func loginClicked(_ sender: Any) {
         let sv = displaySpinner(onView: self.view)
 removeSpinner(spinner: sv)
-        self.loadHomeScreen()
 
-       // logInAPICallwith(username:usernameTxtFiled.text ?? "",password:passwordTxtField.text ?? "")
+       logInAPICallwith(username:usernameTxtFiled.text ?? "",password:passwordTxtField.text ?? "")
 
     }
     func  logInAPICallwith(username:String,password:String){
@@ -32,7 +31,7 @@ removeSpinner(spinner: sv)
             "email_id":"swati_rout@epam.com",
             "password":"swati123"
         ]
-        let  urlstring = "http://10.71.164.4:8000/authenticate/login/"
+        let  urlstring = MAIN_URL+"authenticate/login/"
         
         if let url = URL(string:urlstring){
             let request = NSMutableURLRequest(url: url)
@@ -57,6 +56,11 @@ removeSpinner(spinner: sv)
     func loadHomeScreen(){
         let vcTabController = UIStoryboard.getViewControllerWithId(StoryBoardNames.Food, ControllerIds.tabBarController)
         self.navigationController?.pushViewController(vcTabController, animated: false)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.isHidden = true
+        self.navigationController?.navigationBar.isHidden = true
     }
 
 }
