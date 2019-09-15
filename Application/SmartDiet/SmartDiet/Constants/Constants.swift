@@ -23,6 +23,7 @@ struct ReuseIdentifiers {
     static let cellWithImage  = "CellWithImage"
     static let mealDetailCell = "MealDetailCell"
     static let cellCharts     = "CellCharts"
+    static let cellDescription = "CellDescription"
 }
 struct ControllerIds {
     static let tabBarController = "TabBarController"
@@ -41,6 +42,7 @@ struct Nibs {
     static let cellWithImage  = "CellWithImage"
     static let mealDetailCell = "MealDetailCell"
     static let cellCharts     = "CellCharts"
+    static let cellDescription = "CellDescription"
 }
 struct Images {
     static let veg = "veg"
