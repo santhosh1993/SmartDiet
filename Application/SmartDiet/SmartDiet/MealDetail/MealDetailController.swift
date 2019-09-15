@@ -52,8 +52,9 @@ extension MealDetailController: UICollectionViewDataSource {
         
         let section = indexPath.section
         return section == 0 ? getImageCell(indexPath) :
-        section == 1 ? getDetailCell(indexPath) :
-        getChartsCell(indexPath)
+            section == 1 ? getChartsCell(indexPath):
+            getDetailCell(indexPath)
+        
     }
     func getImageCell(_ indexPath: IndexPath) -> CellWithImage {
         
@@ -87,8 +88,9 @@ extension MealDetailController: UICollectionViewDelegateFlowLayout {
         
         let deviceWidth = UIScreen.main.bounds.size.width
         return indexPath.section == 0 ? CGSize(width: deviceWidth, height: 250) :
-        indexPath.section == 1 ? CGSize(width: deviceWidth, height: dataSource.getHeightofDescCell()) :
-        CGSize(width: deviceWidth, height: 170)
+            indexPath.section == 1 ? CGSize(width: deviceWidth, height: 260):
+        CGSize(width: deviceWidth, height: dataSource.getHeightofDescCell())
+        
     }
 }
 

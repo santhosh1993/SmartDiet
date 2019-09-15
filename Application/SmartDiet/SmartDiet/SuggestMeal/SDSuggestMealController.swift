@@ -139,6 +139,9 @@ class SuggestMealController: UIViewController ,UITextFieldDelegate,UIPickerViewD
                 if let unWrappedResponse = response as? [String: Any] {
                     print("unWrappedResponse",unWrappedResponse)
                     DispatchQueue.main.async {
+                        let controllerMealDetail = UIStoryboard.getViewControllerWithId(StoryBoardNames.Food, ControllerIds.MealDetailController) as! MealDetailController
+                        controllerMealDetail.dataSource = MealDetailViewModel(unWrappedResponse)
+                        _ = self.navigationController?.pushViewController(controllerMealDetail, animated: true)
                     }
                 }
             }

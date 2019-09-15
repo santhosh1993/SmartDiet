@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		69B280D5F8B51B3A6FC740A8 /* Pods_SmartDietTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 855EC0B4228812BFF7484441 /* Pods_SmartDietTests.framework */; };
-		7311470500B7E5CBD991B502 /* Pods_SmartDietUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CFC5463017A90EA8FD659E /* Pods_SmartDietUITests.framework */; };
+		1C5A6EC71D6F9B3149B5CDBA /* Pods_SmartDietTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5139096A61465D7F516FD14E /* Pods_SmartDietTests.framework */; };
 		9E321EBC232D24A900BC5455 /* MealDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E321EBB232D24A900BC5455 /* MealDetailController.swift */; };
 		9E321EC2232D267200BC5455 /* CellWithImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E321EC0232D267200BC5455 /* CellWithImage.swift */; };
 		9E321EC3232D267200BC5455 /* CellWithImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E321EC1232D267200BC5455 /* CellWithImage.xib */; };
@@ -45,10 +44,11 @@
 		9EE339E8232CE87B00D52128 /* NetWorking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE339E7232CE87B00D52128 /* NetWorking.swift */; };
 		9EE339EA232CF0CE00D52128 /* Food.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EE339E9232CF0CE00D52128 /* Food.storyboard */; };
 		9EE339EC232CF14D00D52128 /* UIStoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE339EB232CF14D00D52128 /* UIStoryBoard.swift */; };
-		9F87804E8EE4B50989EE48C9 /* Pods_SmartDiet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE43EB480CDCFB93C0631171 /* Pods_SmartDiet.framework */; };
 		D929ED9F232CC1E80084FB68 /* SDLogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929ED9E232CC1E80084FB68 /* SDLogInController.swift */; };
 		D932FFD4232DF4D800176620 /* SDProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D932FFD3232DF4D800176620 /* SDProfileController.swift */; };
 		D934C19F232D00B600C56AFD /* SDSuggestMealController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D934C19E232D00B600C56AFD /* SDSuggestMealController.swift */; };
+		F825DAE83D9AD5CDF95AF134 /* Pods_SmartDiet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDBF751B473A9BDC4B2074B8 /* Pods_SmartDiet.framework */; };
+		FA16A39AB01341A821E41886 /* Pods_SmartDietUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397F66B09921C4DCB0F4C25D /* Pods_SmartDietUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,11 +69,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1DE5B15E6F56F01F6636E001 /* Pods-SmartDietUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDietUITests.release.xcconfig"; path = "Target Support Files/Pods-SmartDietUITests/Pods-SmartDietUITests.release.xcconfig"; sourceTree = "<group>"; };
-		3337717E9A35A0551FD6625E /* Pods-SmartDietTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDietTests.release.xcconfig"; path = "Target Support Files/Pods-SmartDietTests/Pods-SmartDietTests.release.xcconfig"; sourceTree = "<group>"; };
-		71BCFB6F2C40A73BB72F2438 /* Pods-SmartDietUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDietUITests.debug.xcconfig"; path = "Target Support Files/Pods-SmartDietUITests/Pods-SmartDietUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		855EC0B4228812BFF7484441 /* Pods_SmartDietTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartDietTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9019128539BA72027EB3B582 /* Pods-SmartDiet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDiet.debug.xcconfig"; path = "Target Support Files/Pods-SmartDiet/Pods-SmartDiet.debug.xcconfig"; sourceTree = "<group>"; };
+		0DECE8F67A75A42A2A5A7F0D /* Pods-SmartDietUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDietUITests.release.xcconfig"; path = "Target Support Files/Pods-SmartDietUITests/Pods-SmartDietUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1803724BE826D1EC1B366BD1 /* Pods-SmartDietTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDietTests.release.xcconfig"; path = "Target Support Files/Pods-SmartDietTests/Pods-SmartDietTests.release.xcconfig"; sourceTree = "<group>"; };
+		397F66B09921C4DCB0F4C25D /* Pods_SmartDietUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartDietUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5139096A61465D7F516FD14E /* Pods_SmartDietTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartDietTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		822BB209AEB53AE4406C47D7 /* Pods-SmartDiet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDiet.debug.xcconfig"; path = "Target Support Files/Pods-SmartDiet/Pods-SmartDiet.debug.xcconfig"; sourceTree = "<group>"; };
+		8B2BF5E40989ECA134B8CC32 /* Pods-SmartDietUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDietUITests.debug.xcconfig"; path = "Target Support Files/Pods-SmartDietUITests/Pods-SmartDietUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9E321EBB232D24A900BC5455 /* MealDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailController.swift; sourceTree = "<group>"; };
 		9E321EC0232D267200BC5455 /* CellWithImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellWithImage.swift; sourceTree = "<group>"; };
 		9E321EC1232D267200BC5455 /* CellWithImage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellWithImage.xib; sourceTree = "<group>"; };
@@ -116,13 +117,12 @@
 		9EE339E7232CE87B00D52128 /* NetWorking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorking.swift; sourceTree = "<group>"; };
 		9EE339E9232CF0CE00D52128 /* Food.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Food.storyboard; sourceTree = "<group>"; };
 		9EE339EB232CF14D00D52128 /* UIStoryBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryBoard.swift; sourceTree = "<group>"; };
-		B4CFC5463017A90EA8FD659E /* Pods_SmartDietUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartDietUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE1ABBBEE71E9B8B1DC72BB5 /* Pods-SmartDietTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDietTests.debug.xcconfig"; path = "Target Support Files/Pods-SmartDietTests/Pods-SmartDietTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CDA70115310FA413DBD57CEA /* Pods-SmartDietTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDietTests.debug.xcconfig"; path = "Target Support Files/Pods-SmartDietTests/Pods-SmartDietTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D1EB4B68DE5C14F1173CB8AE /* Pods-SmartDiet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDiet.release.xcconfig"; path = "Target Support Files/Pods-SmartDiet/Pods-SmartDiet.release.xcconfig"; sourceTree = "<group>"; };
 		D929ED9E232CC1E80084FB68 /* SDLogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDLogInController.swift; sourceTree = "<group>"; };
 		D932FFD3232DF4D800176620 /* SDProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDProfileController.swift; sourceTree = "<group>"; };
 		D934C19E232D00B600C56AFD /* SDSuggestMealController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDSuggestMealController.swift; sourceTree = "<group>"; };
-		E4DD92CD87344A9DDDF2FC29 /* Pods-SmartDiet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDiet.release.xcconfig"; path = "Target Support Files/Pods-SmartDiet/Pods-SmartDiet.release.xcconfig"; sourceTree = "<group>"; };
-		EE43EB480CDCFB93C0631171 /* Pods_SmartDiet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartDiet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDBF751B473A9BDC4B2074B8 /* Pods_SmartDiet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartDiet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F87804E8EE4B50989EE48C9 /* Pods_SmartDiet.framework in Frameworks */,
+				F825DAE83D9AD5CDF95AF134 /* Pods_SmartDiet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69B280D5F8B51B3A6FC740A8 /* Pods_SmartDietTests.framework in Frameworks */,
+				1C5A6EC71D6F9B3149B5CDBA /* Pods_SmartDietTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,22 +146,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7311470500B7E5CBD991B502 /* Pods_SmartDietUITests.framework in Frameworks */,
+				FA16A39AB01341A821E41886 /* Pods_SmartDietUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C768A21CFAAA07F470DFD81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDBF751B473A9BDC4B2074B8 /* Pods_SmartDiet.framework */,
+				5139096A61465D7F516FD14E /* Pods_SmartDietTests.framework */,
+				397F66B09921C4DCB0F4C25D /* Pods_SmartDietUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		310D251FF6746A3E084BCCF3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9019128539BA72027EB3B582 /* Pods-SmartDiet.debug.xcconfig */,
-				E4DD92CD87344A9DDDF2FC29 /* Pods-SmartDiet.release.xcconfig */,
-				BE1ABBBEE71E9B8B1DC72BB5 /* Pods-SmartDietTests.debug.xcconfig */,
-				3337717E9A35A0551FD6625E /* Pods-SmartDietTests.release.xcconfig */,
-				71BCFB6F2C40A73BB72F2438 /* Pods-SmartDietUITests.debug.xcconfig */,
-				1DE5B15E6F56F01F6636E001 /* Pods-SmartDietUITests.release.xcconfig */,
+				822BB209AEB53AE4406C47D7 /* Pods-SmartDiet.debug.xcconfig */,
+				D1EB4B68DE5C14F1173CB8AE /* Pods-SmartDiet.release.xcconfig */,
+				CDA70115310FA413DBD57CEA /* Pods-SmartDietTests.debug.xcconfig */,
+				1803724BE826D1EC1B366BD1 /* Pods-SmartDietTests.release.xcconfig */,
+				8B2BF5E40989ECA134B8CC32 /* Pods-SmartDietUITests.debug.xcconfig */,
+				0DECE8F67A75A42A2A5A7F0D /* Pods-SmartDietUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -205,7 +215,7 @@
 				9E46A8BB232CA8960037F4CD /* SmartDietUITests */,
 				9E46A897232CA8950037F4CD /* Products */,
 				310D251FF6746A3E084BCCF3 /* Pods */,
-				ABA3F1BE34236F02AD9D240A /* Frameworks */,
+				1C768A21CFAAA07F470DFD81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -332,16 +342,6 @@
 			path = BookAMeal;
 			sourceTree = "<group>";
 		};
-		ABA3F1BE34236F02AD9D240A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				EE43EB480CDCFB93C0631171 /* Pods_SmartDiet.framework */,
-				855EC0B4228812BFF7484441 /* Pods_SmartDietTests.framework */,
-				B4CFC5463017A90EA8FD659E /* Pods_SmartDietUITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		D929ED9D232CC1D00084FB68 /* LogIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -373,11 +373,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E46A8C1232CA8960037F4CD /* Build configuration list for PBXNativeTarget "SmartDiet" */;
 			buildPhases = (
-				FF1DF0F1CD3CD0C5B933ACA3 /* [CP] Check Pods Manifest.lock */,
+				861F6EEB8BA04D61B7BB23C3 /* [CP] Check Pods Manifest.lock */,
 				9E46A892232CA8950037F4CD /* Sources */,
 				9E46A893232CA8950037F4CD /* Frameworks */,
 				9E46A894232CA8950037F4CD /* Resources */,
-				BCAF4532744826831D004C4C /* [CP] Embed Pods Frameworks */,
+				6A4C5D776B40225F5DF64C47 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -392,7 +392,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E46A8C4232CA8960037F4CD /* Build configuration list for PBXNativeTarget "SmartDietTests" */;
 			buildPhases = (
-				A6C4DB49C8CC061095CD21B0 /* [CP] Check Pods Manifest.lock */,
+				C403D9EBA2CD8CC9067EA042 /* [CP] Check Pods Manifest.lock */,
 				9E46A8A9232CA8960037F4CD /* Sources */,
 				9E46A8AA232CA8960037F4CD /* Frameworks */,
 				9E46A8AB232CA8960037F4CD /* Resources */,
@@ -411,7 +411,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E46A8C7232CA8960037F4CD /* Build configuration list for PBXNativeTarget "SmartDietUITests" */;
 			buildPhases = (
-				B1B8558EE3B8DE8E313F7433 /* [CP] Check Pods Manifest.lock */,
+				0FACF2DA39AAEBD8A6FC62E0 /* [CP] Check Pods Manifest.lock */,
 				9E46A8B4232CA8960037F4CD /* Sources */,
 				9E46A8B5232CA8960037F4CD /* Frameworks */,
 				9E46A8B6232CA8960037F4CD /* Resources */,
@@ -504,29 +504,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A6C4DB49C8CC061095CD21B0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SmartDietTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B1B8558EE3B8DE8E313F7433 /* [CP] Check Pods Manifest.lock */ = {
+		0FACF2DA39AAEBD8A6FC62E0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -548,7 +526,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BCAF4532744826831D004C4C /* [CP] Embed Pods Frameworks */ = {
+		6A4C5D776B40225F5DF64C47 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -565,7 +543,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartDiet/Pods-SmartDiet-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FF1DF0F1CD3CD0C5B933ACA3 /* [CP] Check Pods Manifest.lock */ = {
+		861F6EEB8BA04D61B7BB23C3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -581,6 +559,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SmartDiet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C403D9EBA2CD8CC9067EA042 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartDietTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -793,7 +793,7 @@
 		};
 		9E46A8C2232CA8960037F4CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9019128539BA72027EB3B582 /* Pods-SmartDiet.debug.xcconfig */;
+			baseConfigurationReference = 822BB209AEB53AE4406C47D7 /* Pods-SmartDiet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -814,7 +814,7 @@
 		};
 		9E46A8C3232CA8960037F4CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4DD92CD87344A9DDDF2FC29 /* Pods-SmartDiet.release.xcconfig */;
+			baseConfigurationReference = D1EB4B68DE5C14F1173CB8AE /* Pods-SmartDiet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -835,7 +835,7 @@
 		};
 		9E46A8C5232CA8960037F4CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE1ABBBEE71E9B8B1DC72BB5 /* Pods-SmartDietTests.debug.xcconfig */;
+			baseConfigurationReference = CDA70115310FA413DBD57CEA /* Pods-SmartDietTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -856,7 +856,7 @@
 		};
 		9E46A8C6232CA8960037F4CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3337717E9A35A0551FD6625E /* Pods-SmartDietTests.release.xcconfig */;
+			baseConfigurationReference = 1803724BE826D1EC1B366BD1 /* Pods-SmartDietTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -877,7 +877,7 @@
 		};
 		9E46A8C8232CA8960037F4CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71BCFB6F2C40A73BB72F2438 /* Pods-SmartDietUITests.debug.xcconfig */;
+			baseConfigurationReference = 8B2BF5E40989ECA134B8CC32 /* Pods-SmartDietUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -897,7 +897,7 @@
 		};
 		9E46A8C9232CA8960037F4CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1DE5B15E6F56F01F6636E001 /* Pods-SmartDietUITests.release.xcconfig */;
+			baseConfigurationReference = 0DECE8F67A75A42A2A5A7F0D /* Pods-SmartDietUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
