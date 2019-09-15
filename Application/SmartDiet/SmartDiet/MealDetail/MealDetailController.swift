@@ -30,6 +30,12 @@ final class MealDetailController: UIViewController {
         collectionView.register(UINib(nibName: Nibs.cellCharts, bundle: nil), forCellWithReuseIdentifier: ReuseIdentifiers.cellCharts)
         collectionView.register(UINib(nibName: Nibs.cellDescription, bundle: nil), forCellWithReuseIdentifier: ReuseIdentifiers.cellDescription)
     }
+    @IBAction func addNavButton() {
+        _ = self.navigationController?.popViewController(animated: true)
+    }
+    @objc func onBackPressed() {
+        
+    }
     private func  showAlert() {
         
         let alertController = UIAlertController.init(title: AlertConstants.Alert, message: AlertConstants.FoodOnTheWay, preferredStyle: .alert)
@@ -109,7 +115,7 @@ extension MealDetailController: UICollectionViewDelegateFlowLayout {
             return CGSize(width: deviceWidth, height: 260)
         default:
             return CGSize(width: deviceWidth, height: dataSource.getHeightofDescCell())
-        }        
+        }
     }
 }
 

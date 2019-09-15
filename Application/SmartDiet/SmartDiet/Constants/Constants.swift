@@ -47,6 +47,7 @@ struct Nibs {
 struct Images {
     static let veg = "veg"
     static let nonVeg = "nonVeg"
+    static let back = "back"
 }
 struct StoryBoardNames {
     static let Food = "Food"
