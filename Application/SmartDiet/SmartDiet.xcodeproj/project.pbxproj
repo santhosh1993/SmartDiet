@@ -1,0 +1,980 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D0834364F2BC2042B129E1E /* Pods_SmartDietTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB2271AC479F87C6F82AD6E0 /* Pods_SmartDietTests.framework */; };
+		6AEF6527F22A8F9D8044F3B7 /* Pods_SmartDiet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B8F94F5FA34C17CD3C8B78 /* Pods_SmartDiet.framework */; };
+		9E321EBC232D24A900BC5455 /* MealDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E321EBB232D24A900BC5455 /* MealDetailController.swift */; };
+		9E321EC2232D267200BC5455 /* CellWithImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E321EC0232D267200BC5455 /* CellWithImage.swift */; };
+		9E321EC3232D267200BC5455 /* CellWithImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E321EC1232D267200BC5455 /* CellWithImage.xib */; };
+		9E321EC6232D270000BC5455 /* MealDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E321EC4232D270000BC5455 /* MealDetailCell.swift */; };
+		9E321EC7232D270000BC5455 /* MealDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E321EC5232D270000BC5455 /* MealDetailCell.xib */; };
+		9E321EC9232D298600BC5455 /* MealDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E321EC8232D298600BC5455 /* MealDetailViewModel.swift */; };
+		9E321ECB232D29AC00BC5455 /* MealDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E321ECA232D29AC00BC5455 /* MealDetailProtocol.swift */; };
+		9E321ECE232D3EB500BC5455 /* CellCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E321ECC232D3EB500BC5455 /* CellCharts.swift */; };
+		9E321ECF232D3EB500BC5455 /* CellCharts.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E321ECD232D3EB500BC5455 /* CellCharts.xib */; };
+		9E321ED2232DE60D00BC5455 /* NutritionIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E321ED1232DE60D00BC5455 /* NutritionIndicator.swift */; };
+		9E321ED4232DE61500BC5455 /* NutritionIndicator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E321ED3232DE61400BC5455 /* NutritionIndicator.xib */; };
+		9E321ED6232DF35600BC5455 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E321ED5232DF35600BC5455 /* UILabelExtension.swift */; };
+		9E321ED9232E1A7D00BC5455 /* CellDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E321ED7232E1A7D00BC5455 /* CellDescription.swift */; };
+		9E321EDA232E1A7D00BC5455 /* CellDescription.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E321ED8232E1A7D00BC5455 /* CellDescription.xib */; };
+		9E46A89A232CA8950037F4CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A899232CA8950037F4CD /* AppDelegate.swift */; };
+		9E46A89F232CA8950037F4CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E46A89D232CA8950037F4CD /* Main.storyboard */; };
+		9E46A8A2232CA8950037F4CD /* SmartDiet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8A0232CA8950037F4CD /* SmartDiet.xcdatamodeld */; };
+		9E46A8A4232CA8960037F4CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E46A8A3232CA8960037F4CD /* Assets.xcassets */; };
+		9E46A8A7232CA8960037F4CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E46A8A5232CA8960037F4CD /* LaunchScreen.storyboard */; };
+		9E46A8B2232CA8960037F4CD /* SmartDietTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8B1232CA8960037F4CD /* SmartDietTests.swift */; };
+		9E46A8BD232CA8960037F4CD /* SmartDietUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8BC232CA8960037F4CD /* SmartDietUITests.swift */; };
+		9E46A8D1232CAEC30037F4CD /* SelectFoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8CF232CAEC30037F4CD /* SelectFoodCell.swift */; };
+		9E46A8D2232CAEC30037F4CD /* SelectFoodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E46A8D0232CAEC30037F4CD /* SelectFoodCell.xib */; };
+		9E46A8D5232CAFC50037F4CD /* FoodNameWithTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8D4232CAFC50037F4CD /* FoodNameWithTypeView.swift */; };
+		9E46A8D8232CAFE70037F4CD /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8D7232CAFE70037F4CD /* UIViewExtension.swift */; };
+		9E46A8DA232CB2700037F4CD /* FoodNameWithTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E46A8D9232CB2700037F4CD /* FoodNameWithTypeView.xib */; };
+		9E46A8DD232CB6CB0037F4CD /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8DC232CB6CB0037F4CD /* FoodModel.swift */; };
+		9E46A8E0232CB76B0037F4CD /* FoodPtotocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8DF232CB76B0037F4CD /* FoodPtotocols.swift */; };
+		9E46A8E3232CBC630037F4CD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8E2232CBC630037F4CD /* Constants.swift */; };
+		9E46A8E5232CC0930037F4CD /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8E4232CC0930037F4CD /* CustomButton.swift */; };
+		9E46A8E7232CC7B50037F4CD /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8E6232CC7B50037F4CD /* TypeAliases.swift */; };
+		9EE339E0232CE19E00D52128 /* BookAMealController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE339DF232CE19E00D52128 /* BookAMealController.swift */; };
+		9EE339E2232CE25D00D52128 /* BookAMealViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE339E1232CE25D00D52128 /* BookAMealViewModel.swift */; };
+		9EE339E4232CE27800D52128 /* BookAMealProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE339E3232CE27800D52128 /* BookAMealProtocols.swift */; };
+		9EE339E6232CE79600D52128 /* BookAMealNetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE339E5232CE79600D52128 /* BookAMealNetworkHandler.swift */; };
+		9EE339E8232CE87B00D52128 /* NetWorking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE339E7232CE87B00D52128 /* NetWorking.swift */; };
+		9EE339EA232CF0CE00D52128 /* Food.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EE339E9232CF0CE00D52128 /* Food.storyboard */; };
+		9EE339EC232CF14D00D52128 /* UIStoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE339EB232CF14D00D52128 /* UIStoryBoard.swift */; };
+		AAEFA7E5740CC9AA825DA7B3 /* Pods_SmartDietUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF90221316E044695D452023 /* Pods_SmartDietUITests.framework */; };
+		D929ED9F232CC1E80084FB68 /* SDLogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929ED9E232CC1E80084FB68 /* SDLogInController.swift */; };
+		D932FFD4232DF4D800176620 /* SDProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D932FFD3232DF4D800176620 /* SDProfileController.swift */; };
+		D934C19F232D00B600C56AFD /* SDSuggestMealController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D934C19E232D00B600C56AFD /* SDSuggestMealController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9E46A8AE232CA8960037F4CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E46A88E232CA8950037F4CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E46A895232CA8950037F4CD;
+			remoteInfo = SmartDiet;
+		};
+		9E46A8B9232CA8960037F4CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E46A88E232CA8950037F4CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E46A895232CA8950037F4CD;
+			remoteInfo = SmartDiet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		485F4361FE8C01E8F15144B9 /* Pods-SmartDietTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDietTests.debug.xcconfig"; path = "Target Support Files/Pods-SmartDietTests/Pods-SmartDietTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6B0C4D90EA2E5C607DF6CDDC /* Pods-SmartDietTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDietTests.release.xcconfig"; path = "Target Support Files/Pods-SmartDietTests/Pods-SmartDietTests.release.xcconfig"; sourceTree = "<group>"; };
+		72156AB046864A4A81F68854 /* Pods-SmartDietUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDietUITests.release.xcconfig"; path = "Target Support Files/Pods-SmartDietUITests/Pods-SmartDietUITests.release.xcconfig"; sourceTree = "<group>"; };
+		94F6E40E24538D7595A036B2 /* Pods-SmartDiet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDiet.debug.xcconfig"; path = "Target Support Files/Pods-SmartDiet/Pods-SmartDiet.debug.xcconfig"; sourceTree = "<group>"; };
+		9E321EBB232D24A900BC5455 /* MealDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailController.swift; sourceTree = "<group>"; };
+		9E321EC0232D267200BC5455 /* CellWithImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellWithImage.swift; sourceTree = "<group>"; };
+		9E321EC1232D267200BC5455 /* CellWithImage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellWithImage.xib; sourceTree = "<group>"; };
+		9E321EC4232D270000BC5455 /* MealDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailCell.swift; sourceTree = "<group>"; };
+		9E321EC5232D270000BC5455 /* MealDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealDetailCell.xib; sourceTree = "<group>"; };
+		9E321EC8232D298600BC5455 /* MealDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailViewModel.swift; sourceTree = "<group>"; };
+		9E321ECA232D29AC00BC5455 /* MealDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailProtocol.swift; sourceTree = "<group>"; };
+		9E321ECC232D3EB500BC5455 /* CellCharts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCharts.swift; sourceTree = "<group>"; };
+		9E321ECD232D3EB500BC5455 /* CellCharts.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellCharts.xib; sourceTree = "<group>"; };
+		9E321ED1232DE60D00BC5455 /* NutritionIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionIndicator.swift; sourceTree = "<group>"; };
+		9E321ED3232DE61400BC5455 /* NutritionIndicator.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NutritionIndicator.xib; sourceTree = "<group>"; };
+		9E321ED5232DF35600BC5455 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		9E321ED7232E1A7D00BC5455 /* CellDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDescription.swift; sourceTree = "<group>"; };
+		9E321ED8232E1A7D00BC5455 /* CellDescription.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellDescription.xib; sourceTree = "<group>"; };
+		9E46A896232CA8950037F4CD /* SmartDiet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartDiet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E46A899232CA8950037F4CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9E46A89E232CA8950037F4CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9E46A8A1232CA8950037F4CD /* SmartDiet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartDiet.xcdatamodel; sourceTree = "<group>"; };
+		9E46A8A3232CA8960037F4CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9E46A8A6232CA8960037F4CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9E46A8A8232CA8960037F4CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E46A8AD232CA8960037F4CD /* SmartDietTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartDietTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E46A8B1232CA8960037F4CD /* SmartDietTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartDietTests.swift; sourceTree = "<group>"; };
+		9E46A8B3232CA8960037F4CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E46A8B8232CA8960037F4CD /* SmartDietUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartDietUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E46A8BC232CA8960037F4CD /* SmartDietUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartDietUITests.swift; sourceTree = "<group>"; };
+		9E46A8BE232CA8960037F4CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E46A8CF232CAEC30037F4CD /* SelectFoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFoodCell.swift; sourceTree = "<group>"; };
+		9E46A8D0232CAEC30037F4CD /* SelectFoodCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectFoodCell.xib; sourceTree = "<group>"; };
+		9E46A8D4232CAFC50037F4CD /* FoodNameWithTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodNameWithTypeView.swift; sourceTree = "<group>"; };
+		9E46A8D7232CAFE70037F4CD /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		9E46A8D9232CB2700037F4CD /* FoodNameWithTypeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodNameWithTypeView.xib; sourceTree = "<group>"; };
+		9E46A8DC232CB6CB0037F4CD /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
+		9E46A8DF232CB76B0037F4CD /* FoodPtotocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPtotocols.swift; sourceTree = "<group>"; };
+		9E46A8E2232CBC630037F4CD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9E46A8E4232CC0930037F4CD /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		9E46A8E6232CC7B50037F4CD /* TypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
+		9EE339DF232CE19E00D52128 /* BookAMealController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAMealController.swift; sourceTree = "<group>"; };
+		9EE339E1232CE25D00D52128 /* BookAMealViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAMealViewModel.swift; sourceTree = "<group>"; };
+		9EE339E3232CE27800D52128 /* BookAMealProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAMealProtocols.swift; sourceTree = "<group>"; };
+		9EE339E5232CE79600D52128 /* BookAMealNetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAMealNetworkHandler.swift; sourceTree = "<group>"; };
+		9EE339E7232CE87B00D52128 /* NetWorking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorking.swift; sourceTree = "<group>"; };
+		9EE339E9232CF0CE00D52128 /* Food.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Food.storyboard; sourceTree = "<group>"; };
+		9EE339EB232CF14D00D52128 /* UIStoryBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryBoard.swift; sourceTree = "<group>"; };
+		B1B8F94F5FA34C17CD3C8B78 /* Pods_SmartDiet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartDiet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD95FC60A40DB0D65FE5B4A2 /* Pods-SmartDietUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDietUITests.debug.xcconfig"; path = "Target Support Files/Pods-SmartDietUITests/Pods-SmartDietUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB2271AC479F87C6F82AD6E0 /* Pods_SmartDietTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartDietTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5EE2BBF1E2A7D5B081F4489 /* Pods-SmartDiet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDiet.release.xcconfig"; path = "Target Support Files/Pods-SmartDiet/Pods-SmartDiet.release.xcconfig"; sourceTree = "<group>"; };
+		D929ED9E232CC1E80084FB68 /* SDLogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDLogInController.swift; sourceTree = "<group>"; };
+		D932FFD3232DF4D800176620 /* SDProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDProfileController.swift; sourceTree = "<group>"; };
+		D934C19E232D00B600C56AFD /* SDSuggestMealController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDSuggestMealController.swift; sourceTree = "<group>"; };
+		FF90221316E044695D452023 /* Pods_SmartDietUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartDietUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E46A893232CA8950037F4CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AEF6527F22A8F9D8044F3B7 /* Pods_SmartDiet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E46A8AA232CA8960037F4CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D0834364F2BC2042B129E1E /* Pods_SmartDietTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E46A8B5232CA8960037F4CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAEFA7E5740CC9AA825DA7B3 /* Pods_SmartDietUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1139BB32483D5DF334D22788 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1B8F94F5FA34C17CD3C8B78 /* Pods_SmartDiet.framework */,
+				CB2271AC479F87C6F82AD6E0 /* Pods_SmartDietTests.framework */,
+				FF90221316E044695D452023 /* Pods_SmartDietUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		310D251FF6746A3E084BCCF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94F6E40E24538D7595A036B2 /* Pods-SmartDiet.debug.xcconfig */,
+				D5EE2BBF1E2A7D5B081F4489 /* Pods-SmartDiet.release.xcconfig */,
+				485F4361FE8C01E8F15144B9 /* Pods-SmartDietTests.debug.xcconfig */,
+				6B0C4D90EA2E5C607DF6CDDC /* Pods-SmartDietTests.release.xcconfig */,
+				BD95FC60A40DB0D65FE5B4A2 /* Pods-SmartDietUITests.debug.xcconfig */,
+				72156AB046864A4A81F68854 /* Pods-SmartDietUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9E321EBA232D244700BC5455 /* MealDetail */ = {
+			isa = PBXGroup;
+			children = (
+				9E321EBB232D24A900BC5455 /* MealDetailController.swift */,
+				9E321EC8232D298600BC5455 /* MealDetailViewModel.swift */,
+			);
+			path = MealDetail;
+			sourceTree = "<group>";
+		};
+		9E321EBD232D262200BC5455 /* MealDetail */ = {
+			isa = PBXGroup;
+			children = (
+				9E321EC0232D267200BC5455 /* CellWithImage.swift */,
+				9E321EC1232D267200BC5455 /* CellWithImage.xib */,
+				9E321EC4232D270000BC5455 /* MealDetailCell.swift */,
+				9E321EC5232D270000BC5455 /* MealDetailCell.xib */,
+				9E321ECC232D3EB500BC5455 /* CellCharts.swift */,
+				9E321ECD232D3EB500BC5455 /* CellCharts.xib */,
+				9E321ED7232E1A7D00BC5455 /* CellDescription.swift */,
+				9E321ED8232E1A7D00BC5455 /* CellDescription.xib */,
+			);
+			path = MealDetail;
+			sourceTree = "<group>";
+		};
+		9E321ED0232DE5D600BC5455 /* MealDetails */ = {
+			isa = PBXGroup;
+			children = (
+				9E321ED1232DE60D00BC5455 /* NutritionIndicator.swift */,
+				9E321ED3232DE61400BC5455 /* NutritionIndicator.xib */,
+			);
+			path = MealDetails;
+			sourceTree = "<group>";
+		};
+		9E46A88D232CA8950037F4CD = {
+			isa = PBXGroup;
+			children = (
+				9E46A898232CA8950037F4CD /* SmartDiet */,
+				9E46A8B0232CA8960037F4CD /* SmartDietTests */,
+				9E46A8BB232CA8960037F4CD /* SmartDietUITests */,
+				9E46A897232CA8950037F4CD /* Products */,
+				310D251FF6746A3E084BCCF3 /* Pods */,
+				1139BB32483D5DF334D22788 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9E46A897232CA8950037F4CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E46A896232CA8950037F4CD /* SmartDiet.app */,
+				9E46A8AD232CA8960037F4CD /* SmartDietTests.xctest */,
+				9E46A8B8232CA8960037F4CD /* SmartDietUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E46A898232CA8950037F4CD /* SmartDiet */ = {
+			isa = PBXGroup;
+			children = (
+				D932FFD2232DF4AF00176620 /* Profile */,
+				9E46A899232CA8950037F4CD /* AppDelegate.swift */,
+				9EE339DE232CE0D300D52128 /* BookAMeal */,
+				D934C19D232D006E00C56AFD /* SuggestMeal */,
+				9E321EBA232D244700BC5455 /* MealDetail */,
+				D929ED9D232CC1D00084FB68 /* LogIn */,
+				9E46A8CA232CAC5D0037F4CD /* CustomCollectionCells */,
+				9E46A8D3232CAF480037F4CD /* CustomComponents */,
+				9E46A8D6232CAFCF0037F4CD /* Extensions */,
+				9E46A8DB232CB5D10037F4CD /* Models */,
+				9E46A8DE232CB74D0037F4CD /* Protocols */,
+				9E46A8E1232CBC490037F4CD /* Constants */,
+				9E46A89D232CA8950037F4CD /* Main.storyboard */,
+				9E46A8A3232CA8960037F4CD /* Assets.xcassets */,
+				9E46A8A5232CA8960037F4CD /* LaunchScreen.storyboard */,
+				9E46A8A8232CA8960037F4CD /* Info.plist */,
+				9E46A8A0232CA8950037F4CD /* SmartDiet.xcdatamodeld */,
+				9E46A8E6232CC7B50037F4CD /* TypeAliases.swift */,
+				9EE339E7232CE87B00D52128 /* NetWorking.swift */,
+				9EE339E9232CF0CE00D52128 /* Food.storyboard */,
+			);
+			path = SmartDiet;
+			sourceTree = "<group>";
+		};
+		9E46A8B0232CA8960037F4CD /* SmartDietTests */ = {
+			isa = PBXGroup;
+			children = (
+				9E46A8B1232CA8960037F4CD /* SmartDietTests.swift */,
+				9E46A8B3232CA8960037F4CD /* Info.plist */,
+			);
+			path = SmartDietTests;
+			sourceTree = "<group>";
+		};
+		9E46A8BB232CA8960037F4CD /* SmartDietUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9E46A8BC232CA8960037F4CD /* SmartDietUITests.swift */,
+				9E46A8BE232CA8960037F4CD /* Info.plist */,
+			);
+			path = SmartDietUITests;
+			sourceTree = "<group>";
+		};
+		9E46A8CA232CAC5D0037F4CD /* CustomCollectionCells */ = {
+			isa = PBXGroup;
+			children = (
+				9E321EBD232D262200BC5455 /* MealDetail */,
+				9E46A8CF232CAEC30037F4CD /* SelectFoodCell.swift */,
+				9E46A8D0232CAEC30037F4CD /* SelectFoodCell.xib */,
+			);
+			path = CustomCollectionCells;
+			sourceTree = "<group>";
+		};
+		9E46A8D3232CAF480037F4CD /* CustomComponents */ = {
+			isa = PBXGroup;
+			children = (
+				9E321ED0232DE5D600BC5455 /* MealDetails */,
+				9E46A8D4232CAFC50037F4CD /* FoodNameWithTypeView.swift */,
+				9E46A8D9232CB2700037F4CD /* FoodNameWithTypeView.xib */,
+				9E46A8E4232CC0930037F4CD /* CustomButton.swift */,
+			);
+			path = CustomComponents;
+			sourceTree = "<group>";
+		};
+		9E46A8D6232CAFCF0037F4CD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9E46A8D7232CAFE70037F4CD /* UIViewExtension.swift */,
+				9EE339EB232CF14D00D52128 /* UIStoryBoard.swift */,
+				9E321ED5232DF35600BC5455 /* UILabelExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9E46A8DB232CB5D10037F4CD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9E46A8DC232CB6CB0037F4CD /* FoodModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9E46A8DE232CB74D0037F4CD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9E46A8DF232CB76B0037F4CD /* FoodPtotocols.swift */,
+				9EE339E3232CE27800D52128 /* BookAMealProtocols.swift */,
+				9E321ECA232D29AC00BC5455 /* MealDetailProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9E46A8E1232CBC490037F4CD /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				9E46A8E2232CBC630037F4CD /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		9EE339DE232CE0D300D52128 /* BookAMeal */ = {
+			isa = PBXGroup;
+			children = (
+				9EE339DF232CE19E00D52128 /* BookAMealController.swift */,
+				9EE339E1232CE25D00D52128 /* BookAMealViewModel.swift */,
+				9EE339E5232CE79600D52128 /* BookAMealNetworkHandler.swift */,
+			);
+			path = BookAMeal;
+			sourceTree = "<group>";
+		};
+		D929ED9D232CC1D00084FB68 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				D929ED9E232CC1E80084FB68 /* SDLogInController.swift */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		D932FFD2232DF4AF00176620 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D932FFD3232DF4D800176620 /* SDProfileController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		D934C19D232D006E00C56AFD /* SuggestMeal */ = {
+			isa = PBXGroup;
+			children = (
+				D934C19E232D00B600C56AFD /* SDSuggestMealController.swift */,
+			);
+			path = SuggestMeal;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E46A895232CA8950037F4CD /* SmartDiet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E46A8C1232CA8960037F4CD /* Build configuration list for PBXNativeTarget "SmartDiet" */;
+			buildPhases = (
+				B310CA5B97D464659A8D4054 /* [CP] Check Pods Manifest.lock */,
+				9E46A892232CA8950037F4CD /* Sources */,
+				9E46A893232CA8950037F4CD /* Frameworks */,
+				9E46A894232CA8950037F4CD /* Resources */,
+				9AB4AE6F15EAEA01811A4DBC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartDiet;
+			productName = SmartDiet;
+			productReference = 9E46A896232CA8950037F4CD /* SmartDiet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9E46A8AC232CA8960037F4CD /* SmartDietTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E46A8C4232CA8960037F4CD /* Build configuration list for PBXNativeTarget "SmartDietTests" */;
+			buildPhases = (
+				C18174ECE82F94199F41ECF6 /* [CP] Check Pods Manifest.lock */,
+				9E46A8A9232CA8960037F4CD /* Sources */,
+				9E46A8AA232CA8960037F4CD /* Frameworks */,
+				9E46A8AB232CA8960037F4CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E46A8AF232CA8960037F4CD /* PBXTargetDependency */,
+			);
+			name = SmartDietTests;
+			productName = SmartDietTests;
+			productReference = 9E46A8AD232CA8960037F4CD /* SmartDietTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9E46A8B7232CA8960037F4CD /* SmartDietUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E46A8C7232CA8960037F4CD /* Build configuration list for PBXNativeTarget "SmartDietUITests" */;
+			buildPhases = (
+				F14161FCAB59333BB1C7B836 /* [CP] Check Pods Manifest.lock */,
+				9E46A8B4232CA8960037F4CD /* Sources */,
+				9E46A8B5232CA8960037F4CD /* Frameworks */,
+				9E46A8B6232CA8960037F4CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E46A8BA232CA8960037F4CD /* PBXTargetDependency */,
+			);
+			name = SmartDietUITests;
+			productName = SmartDietUITests;
+			productReference = 9E46A8B8232CA8960037F4CD /* SmartDietUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E46A88E232CA8950037F4CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Epam;
+				TargetAttributes = {
+					9E46A895232CA8950037F4CD = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					9E46A8AC232CA8960037F4CD = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 9E46A895232CA8950037F4CD;
+					};
+					9E46A8B7232CA8960037F4CD = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 9E46A895232CA8950037F4CD;
+					};
+				};
+			};
+			buildConfigurationList = 9E46A891232CA8950037F4CD /* Build configuration list for PBXProject "SmartDiet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9E46A88D232CA8950037F4CD;
+			productRefGroup = 9E46A897232CA8950037F4CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E46A895232CA8950037F4CD /* SmartDiet */,
+				9E46A8AC232CA8960037F4CD /* SmartDietTests */,
+				9E46A8B7232CA8960037F4CD /* SmartDietUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E46A894232CA8950037F4CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EE339EA232CF0CE00D52128 /* Food.storyboard in Resources */,
+				9E46A8A7232CA8960037F4CD /* LaunchScreen.storyboard in Resources */,
+				9E46A8A4232CA8960037F4CD /* Assets.xcassets in Resources */,
+				9E46A89F232CA8950037F4CD /* Main.storyboard in Resources */,
+				9E321ECF232D3EB500BC5455 /* CellCharts.xib in Resources */,
+				9E46A8DA232CB2700037F4CD /* FoodNameWithTypeView.xib in Resources */,
+				9E321EDA232E1A7D00BC5455 /* CellDescription.xib in Resources */,
+				9E321ED4232DE61500BC5455 /* NutritionIndicator.xib in Resources */,
+				9E321EC7232D270000BC5455 /* MealDetailCell.xib in Resources */,
+				9E46A8D2232CAEC30037F4CD /* SelectFoodCell.xib in Resources */,
+				9E321EC3232D267200BC5455 /* CellWithImage.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E46A8AB232CA8960037F4CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E46A8B6232CA8960037F4CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9AB4AE6F15EAEA01811A4DBC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartDiet/Pods-SmartDiet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartDiet/Pods-SmartDiet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartDiet/Pods-SmartDiet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B310CA5B97D464659A8D4054 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartDiet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C18174ECE82F94199F41ECF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartDietTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F14161FCAB59333BB1C7B836 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartDietUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E46A892232CA8950037F4CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EE339EC232CF14D00D52128 /* UIStoryBoard.swift in Sources */,
+				9E321EC2232D267200BC5455 /* CellWithImage.swift in Sources */,
+				9E46A8D8232CAFE70037F4CD /* UIViewExtension.swift in Sources */,
+				9EE339E4232CE27800D52128 /* BookAMealProtocols.swift in Sources */,
+				9E321EC6232D270000BC5455 /* MealDetailCell.swift in Sources */,
+				9E46A8E5232CC0930037F4CD /* CustomButton.swift in Sources */,
+				9E46A8D5232CAFC50037F4CD /* FoodNameWithTypeView.swift in Sources */,
+				9E46A89A232CA8950037F4CD /* AppDelegate.swift in Sources */,
+				9E321ED9232E1A7D00BC5455 /* CellDescription.swift in Sources */,
+				9E321ED2232DE60D00BC5455 /* NutritionIndicator.swift in Sources */,
+				9EE339E6232CE79600D52128 /* BookAMealNetworkHandler.swift in Sources */,
+				D934C19F232D00B600C56AFD /* SDSuggestMealController.swift in Sources */,
+				9E46A8A2232CA8950037F4CD /* SmartDiet.xcdatamodeld in Sources */,
+				9E321ED6232DF35600BC5455 /* UILabelExtension.swift in Sources */,
+				9E46A8E7232CC7B50037F4CD /* TypeAliases.swift in Sources */,
+				9EE339E8232CE87B00D52128 /* NetWorking.swift in Sources */,
+				9EE339E2232CE25D00D52128 /* BookAMealViewModel.swift in Sources */,
+				D932FFD4232DF4D800176620 /* SDProfileController.swift in Sources */,
+				9E46A8E0232CB76B0037F4CD /* FoodPtotocols.swift in Sources */,
+				9E46A8D1232CAEC30037F4CD /* SelectFoodCell.swift in Sources */,
+				9E321ECE232D3EB500BC5455 /* CellCharts.swift in Sources */,
+				9E321EBC232D24A900BC5455 /* MealDetailController.swift in Sources */,
+				9E46A8DD232CB6CB0037F4CD /* FoodModel.swift in Sources */,
+				9E321ECB232D29AC00BC5455 /* MealDetailProtocol.swift in Sources */,
+				D929ED9F232CC1E80084FB68 /* SDLogInController.swift in Sources */,
+				9EE339E0232CE19E00D52128 /* BookAMealController.swift in Sources */,
+				9E46A8E3232CBC630037F4CD /* Constants.swift in Sources */,
+				9E321EC9232D298600BC5455 /* MealDetailViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E46A8A9232CA8960037F4CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E46A8B2232CA8960037F4CD /* SmartDietTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E46A8B4232CA8960037F4CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E46A8BD232CA8960037F4CD /* SmartDietUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9E46A8AF232CA8960037F4CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E46A895232CA8950037F4CD /* SmartDiet */;
+			targetProxy = 9E46A8AE232CA8960037F4CD /* PBXContainerItemProxy */;
+		};
+		9E46A8BA232CA8960037F4CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E46A895232CA8950037F4CD /* SmartDiet */;
+			targetProxy = 9E46A8B9232CA8960037F4CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9E46A89D232CA8950037F4CD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E46A89E232CA8950037F4CD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9E46A8A5232CA8960037F4CD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E46A8A6232CA8960037F4CD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E46A8BF232CA8960037F4CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9E46A8C0232CA8960037F4CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E46A8C2232CA8960037F4CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94F6E40E24538D7595A036B2 /* Pods-SmartDiet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SmartDiet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.epam.SmartDiet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9E46A8C3232CA8960037F4CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5EE2BBF1E2A7D5B081F4489 /* Pods-SmartDiet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SmartDiet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.epam.SmartDiet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9E46A8C5232CA8960037F4CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 485F4361FE8C01E8F15144B9 /* Pods-SmartDietTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartDietTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.epam.SmartDietTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartDiet.app/SmartDiet";
+			};
+			name = Debug;
+		};
+		9E46A8C6232CA8960037F4CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B0C4D90EA2E5C607DF6CDDC /* Pods-SmartDietTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartDietTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.epam.SmartDietTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartDiet.app/SmartDiet";
+			};
+			name = Release;
+		};
+		9E46A8C8232CA8960037F4CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD95FC60A40DB0D65FE5B4A2 /* Pods-SmartDietUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartDietUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.epam.SmartDietUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartDiet;
+			};
+			name = Debug;
+		};
+		9E46A8C9232CA8960037F4CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72156AB046864A4A81F68854 /* Pods-SmartDietUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartDietUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.epam.SmartDietUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartDiet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E46A891232CA8950037F4CD /* Build configuration list for PBXProject "SmartDiet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E46A8BF232CA8960037F4CD /* Debug */,
+				9E46A8C0232CA8960037F4CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E46A8C1232CA8960037F4CD /* Build configuration list for PBXNativeTarget "SmartDiet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E46A8C2232CA8960037F4CD /* Debug */,
+				9E46A8C3232CA8960037F4CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E46A8C4232CA8960037F4CD /* Build configuration list for PBXNativeTarget "SmartDietTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E46A8C5232CA8960037F4CD /* Debug */,
+				9E46A8C6232CA8960037F4CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E46A8C7232CA8960037F4CD /* Build configuration list for PBXNativeTarget "SmartDietUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E46A8C8232CA8960037F4CD /* Debug */,
+				9E46A8C9232CA8960037F4CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9E46A8A0232CA8950037F4CD /* SmartDiet.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9E46A8A1232CA8950037F4CD /* SmartDiet.xcdatamodel */,
+			);
+			currentVersion = 9E46A8A1232CA8950037F4CD /* SmartDiet.xcdatamodel */;
+			path = SmartDiet.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9E46A88E232CA8950037F4CD /* Project object */;
+}
