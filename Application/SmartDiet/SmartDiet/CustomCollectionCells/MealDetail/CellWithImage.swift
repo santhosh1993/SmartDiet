@@ -24,7 +24,7 @@ final class CellWithImage: UICollectionViewCell {
         
         let gradient = CAGradientLayer()
         
-        gradient.frame = CGRect(x: 0, y: 150, width:UIScreen.main.bounds.width, height: 100)
+        gradient.frame = CGRect(x: 0, y: 200, width:UIScreen.main.bounds.width, height: 50)
         
         gradient.colors = [UIColor.clear.cgColor, UIColor.black.cgColor]
         
