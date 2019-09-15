@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -235,11 +235,60 @@
                     <connections>
                         <outlet property="collectionView" destination="a1g-1e-QSG" id="uF6-aF-am3"/>
                         <segue destination="zIQ-cS-XJy" kind="show" id="B3v-bd-ckV"/>
+
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SF5-iz-O4n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="857.97101449275374" y="-536.38392857142856"/>
+        </scene>
+        <!--Meal-->
+        <scene sceneID="WCp-An-Yqy">
+            <objects>
+                <viewController storyboardIdentifier="MealDetailController" hidesBottomBarWhenPushed="YES" id="gGC-3h-Iu1" customClass="MealDetailController" customModule="SmartDiet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Igr-yS-OH1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lbd-An-u6g">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gXf-Hp-EtB">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="gGC-3h-Iu1" id="h50-aw-F7e"/>
+                                    <outlet property="delegate" destination="gGC-3h-Iu1" id="dpq-T6-xyO"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lbd-An-u6g" firstAttribute="trailing" secondItem="cWQ-Sf-KFA" secondAttribute="trailing" id="Uvp-E9-5Se"/>
+                            <constraint firstItem="lbd-An-u6g" firstAttribute="top" secondItem="cWQ-Sf-KFA" secondAttribute="top" id="jWh-Zh-7rG"/>
+                            <constraint firstItem="lbd-An-u6g" firstAttribute="leading" secondItem="cWQ-Sf-KFA" secondAttribute="leading" id="ljO-Pv-jN3"/>
+                            <constraint firstItem="lbd-An-u6g" firstAttribute="bottom" secondItem="cWQ-Sf-KFA" secondAttribute="bottom" id="oqB-1e-RRp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cWQ-Sf-KFA"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Meal" id="hR7-YF-llc">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="uC1-cJ-ESJ">
+                            <connections>
+                                <action selector="backButtonTapped:" destination="gGC-3h-Iu1" id="TRg-OZ-fha"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="lbd-An-u6g" id="Cmz-vw-Fqz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WxF-JT-I1X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1602.8985507246377" y="-536.38392857142856"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="jZB-IS-Zkl">

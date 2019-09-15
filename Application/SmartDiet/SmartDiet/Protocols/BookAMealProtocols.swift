@@ -21,5 +21,6 @@ protocol BooAMealDataSource {
     func getIsVegAndTItle(_ index: Int) -> (Bool, String)
     func getCaleroies(_ index: Int) -> String
     func getPrice(_ index: Int) -> String
+    func getDataForDetails(_ index: Int) -> [String: Any]
     func getFood(_ index: Int) -> FoodModelProtocol
 }
