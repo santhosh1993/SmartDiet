@@ -1,18 +1,24 @@
 PODS:
+  - Charts (3.3.0):
+    - Charts/Core (= 3.3.0)
+  - Charts/Core (3.3.0)
   - SDWebImage (5.1.1):
     - SDWebImage/Core (= 5.1.1)
   - SDWebImage/Core (5.1.1)
 
 DEPENDENCIES:
+  - Charts
   - SDWebImage (~> 5.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Charts
     - SDWebImage
 
 SPEC CHECKSUMS:
+  Charts: e0dd4cd8f257bccf98407b58183ddca8e8d5b578
   SDWebImage: 96d7f03415ccb28d299d765f93557ff8a617abd8
 
-PODFILE CHECKSUM: cdddf120dbdb0a04ca4b2e3b58c2a013a3fe5068
+PODFILE CHECKSUM: 146b08329b6190b0e5bb63c8dd3523f7ca000a8b
 
 COCOAPODS: 1.6.2

@@ -17,6 +17,10 @@
 		9E321EC7232D270000BC5455 /* MealDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E321EC5232D270000BC5455 /* MealDetailCell.xib */; };
 		9E321EC9232D298600BC5455 /* MealDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E321EC8232D298600BC5455 /* MealDetailViewModel.swift */; };
 		9E321ECB232D29AC00BC5455 /* MealDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E321ECA232D29AC00BC5455 /* MealDetailProtocol.swift */; };
+		9E321ECE232D3EB500BC5455 /* CellCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E321ECC232D3EB500BC5455 /* CellCharts.swift */; };
+		9E321ECF232D3EB500BC5455 /* CellCharts.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E321ECD232D3EB500BC5455 /* CellCharts.xib */; };
+		9E321ED2232DE60D00BC5455 /* NutritionIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E321ED1232DE60D00BC5455 /* NutritionIndicator.swift */; };
+		9E321ED4232DE61500BC5455 /* NutritionIndicator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E321ED3232DE61400BC5455 /* NutritionIndicator.xib */; };
 		9E46A89A232CA8950037F4CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A899232CA8950037F4CD /* AppDelegate.swift */; };
 		9E46A89F232CA8950037F4CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E46A89D232CA8950037F4CD /* Main.storyboard */; };
 		9E46A8A2232CA8950037F4CD /* SmartDiet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8A0232CA8950037F4CD /* SmartDiet.xcdatamodeld */; };
@@ -75,6 +79,10 @@
 		9E321EC5232D270000BC5455 /* MealDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealDetailCell.xib; sourceTree = "<group>"; };
 		9E321EC8232D298600BC5455 /* MealDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailViewModel.swift; sourceTree = "<group>"; };
 		9E321ECA232D29AC00BC5455 /* MealDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailProtocol.swift; sourceTree = "<group>"; };
+		9E321ECC232D3EB500BC5455 /* CellCharts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCharts.swift; sourceTree = "<group>"; };
+		9E321ECD232D3EB500BC5455 /* CellCharts.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellCharts.xib; sourceTree = "<group>"; };
+		9E321ED1232DE60D00BC5455 /* NutritionIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionIndicator.swift; sourceTree = "<group>"; };
+		9E321ED3232DE61400BC5455 /* NutritionIndicator.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NutritionIndicator.xib; sourceTree = "<group>"; };
 		9E46A896232CA8950037F4CD /* SmartDiet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartDiet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E46A899232CA8950037F4CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E46A89E232CA8950037F4CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -170,8 +178,19 @@
 				9E321EC1232D267200BC5455 /* CellWithImage.xib */,
 				9E321EC4232D270000BC5455 /* MealDetailCell.swift */,
 				9E321EC5232D270000BC5455 /* MealDetailCell.xib */,
+				9E321ECC232D3EB500BC5455 /* CellCharts.swift */,
+				9E321ECD232D3EB500BC5455 /* CellCharts.xib */,
 			);
 			path = MealDetail;
+			sourceTree = "<group>";
+		};
+		9E321ED0232DE5D600BC5455 /* MealDetails */ = {
+			isa = PBXGroup;
+			children = (
+				9E321ED1232DE60D00BC5455 /* NutritionIndicator.swift */,
+				9E321ED3232DE61400BC5455 /* NutritionIndicator.xib */,
+			);
+			path = MealDetails;
 			sourceTree = "<group>";
 		};
 		9E46A88D232CA8950037F4CD = {
@@ -253,6 +272,7 @@
 		9E46A8D3232CAF480037F4CD /* CustomComponents */ = {
 			isa = PBXGroup;
 			children = (
+				9E321ED0232DE5D600BC5455 /* MealDetails */,
 				9E46A8D4232CAFC50037F4CD /* FoodNameWithTypeView.swift */,
 				9E46A8D9232CB2700037F4CD /* FoodNameWithTypeView.xib */,
 				9E46A8E4232CC0930037F4CD /* CustomButton.swift */,
@@ -443,7 +463,9 @@
 				9E46A8A7232CA8960037F4CD /* LaunchScreen.storyboard in Resources */,
 				9E46A8A4232CA8960037F4CD /* Assets.xcassets in Resources */,
 				9E46A89F232CA8950037F4CD /* Main.storyboard in Resources */,
+				9E321ECF232D3EB500BC5455 /* CellCharts.xib in Resources */,
 				9E46A8DA232CB2700037F4CD /* FoodNameWithTypeView.xib in Resources */,
+				9E321ED4232DE61500BC5455 /* NutritionIndicator.xib in Resources */,
 				9E321EC7232D270000BC5455 /* MealDetailCell.xib in Resources */,
 				9E46A8D2232CAEC30037F4CD /* SelectFoodCell.xib in Resources */,
 				9E321EC3232D267200BC5455 /* CellWithImage.xib in Resources */,
@@ -520,12 +542,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SmartDiet/Pods-SmartDiet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -570,6 +594,7 @@
 				9E46A8E5232CC0930037F4CD /* CustomButton.swift in Sources */,
 				9E46A8D5232CAFC50037F4CD /* FoodNameWithTypeView.swift in Sources */,
 				9E46A89A232CA8950037F4CD /* AppDelegate.swift in Sources */,
+				9E321ED2232DE60D00BC5455 /* NutritionIndicator.swift in Sources */,
 				9EE339E6232CE79600D52128 /* BookAMealNetworkHandler.swift in Sources */,
 				D934C19F232D00B600C56AFD /* SDSuggestMealController.swift in Sources */,
 				9E46A8A2232CA8950037F4CD /* SmartDiet.xcdatamodeld in Sources */,
@@ -578,6 +603,7 @@
 				9EE339E2232CE25D00D52128 /* BookAMealViewModel.swift in Sources */,
 				9E46A8E0232CB76B0037F4CD /* FoodPtotocols.swift in Sources */,
 				9E46A8D1232CAEC30037F4CD /* SelectFoodCell.swift in Sources */,
+				9E321ECE232D3EB500BC5455 /* CellCharts.swift in Sources */,
 				9E321EBC232D24A900BC5455 /* MealDetailController.swift in Sources */,
 				9E46A8DD232CB6CB0037F4CD /* FoodModel.swift in Sources */,
 				9E321ECB232D29AC00BC5455 /* MealDetailProtocol.swift in Sources */,
