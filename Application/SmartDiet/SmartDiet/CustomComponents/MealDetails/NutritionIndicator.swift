@@ -10,6 +10,9 @@ import UIKit
 
 final class NutritionIndicator: UIView {
 
+    @IBOutlet weak var colorIndicator: UILabel!
+    @IBOutlet weak var labelTitle: UILabel!
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.addViewFromXib()

@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import Charts
 
-class CellCharts: UICollectionViewCell {
+final class CellCharts: UICollectionViewCell {
 
+    @IBOutlet weak var pieChart: PieChartView!
+    @IBOutlet weak var protienView: NutritionIndicator!
+    @IBOutlet weak var fatView: NutritionIndicator!
+    @IBOutlet weak var carbsView: NutritionIndicator!
+    @IBOutlet weak var fibre: NutritionIndicator!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
+    
 }
