@@ -50,9 +50,9 @@ struct StoryBoardNames {
 }
 struct Keys {
     static let price = "price"
-    static let isVeg = "isVeg"
+    static let isVeg = "is_veg"
     static let name  = "name"
-    static let imageUrl   = "imageUrl"
+    static let imageUrl   = "image_url"
     static let desc  = "description"
     static let protein = "protein"
     static let fat     = "fat"
@@ -63,7 +63,7 @@ struct FontNames {
     static let HiraginoSansW3 = "Hiragino Sans W3"
 }
 struct AlertConstants {
-    static let Alert = "Alert!"
-    static let FoodOnTheWay = "Your Food Is On The Way"
+    static let Alert = "Yummy Meal Is On The Way!"
+    static let FoodOnTheWay = ""
     static let Ok = "OK"
 }
