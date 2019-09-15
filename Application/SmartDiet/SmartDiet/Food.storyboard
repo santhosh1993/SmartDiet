@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -153,7 +153,7 @@
                         <viewLayoutGuide key="safeArea" id="oa5-CA-USG"/>
                     </view>
                     <navigationItem key="navigationItem" title="Suggest A Meal" id="vim-CB-YCr">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="IPL-u3-qzi">
+                        <barButtonItem key="leftBarButtonItem" title="Back" image="back" id="IPL-u3-qzi">
                             <connections>
                                 <action selector="backAction:" destination="zIQ-cS-XJy" id="gV0-49-Czc"/>
                             </connections>
@@ -235,6 +235,7 @@
                     <connections>
                         <outlet property="collectionView" destination="a1g-1e-QSG" id="uF6-aF-am3"/>
                         <segue destination="zIQ-cS-XJy" kind="show" id="B3v-bd-ckV"/>
+                        <segue destination="gGC-3h-Iu1" kind="show" id="a6D-Lv-6a9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SF5-iz-O4n" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -250,7 +251,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lbd-An-u6g">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gXf-Hp-EtB">
                                     <size key="itemSize" width="50" height="50"/>
@@ -274,10 +275,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cWQ-Sf-KFA"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Meal" id="hR7-YF-llc">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="uC1-cJ-ESJ">
+                    <navigationItem key="navigationItem" title="Meal" id="Usf-pp-QTQ">
+                        <barButtonItem key="leftBarButtonItem" image="back" id="qx6-gl-5oK">
                             <connections>
-                                <action selector="backButtonTapped:" destination="gGC-3h-Iu1" id="TRg-OZ-fha"/>
+                                <action selector="backButtonTapped:" destination="gGC-3h-Iu1" id="jHf-l8-86i"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -287,7 +288,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WxF-JT-I1X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1602.8985507246377" y="-536.38392857142856"/>
+            <point key="canvasLocation" x="1903" y="-432"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="jZB-IS-Zkl">
@@ -514,11 +515,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="down-arrow" width="45" height="45"/>
-        <image name="logout" width="67.5" height="67.5"/>
-        <image name="restaurant" width="90" height="90"/>
-        <image name="restaurantSelected" width="90" height="90"/>
-        <image name="user" width="75" height="75"/>
-        <image name="userSelected" width="75" height="75"/>
+        <image name="back" width="16" height="16"/>
+        <image name="down-arrow" width="30" height="30"/>
+        <image name="logout" width="30" height="30"/>
+        <image name="restaurant" width="40" height="40"/>
+        <image name="restaurantSelected" width="40" height="40"/>
+        <image name="user" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="userSelected" width="33.333332061767578" height="33.333332061767578"/>
     </resources>
 </document>
