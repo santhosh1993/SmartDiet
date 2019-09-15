@@ -32,7 +32,7 @@ removeSpinner(spinner: sv)
             "email_id":"swati_rout@epam.com",
             "password":"swati123"
         ]
-        let  urlstring = "http://10.71.164.4:8000/authenticate/login/"
+        let  urlstring = MAIN_URL+"authenticate/login/"
         
         if let url = URL(string:urlstring){
             let request = NSMutableURLRequest(url: url)

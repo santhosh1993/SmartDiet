@@ -33,6 +33,7 @@
 		9EE339EA232CF0CE00D52128 /* Food.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EE339E9232CF0CE00D52128 /* Food.storyboard */; };
 		9EE339EC232CF14D00D52128 /* UIStoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE339EB232CF14D00D52128 /* UIStoryBoard.swift */; };
 		D929ED9F232CC1E80084FB68 /* SDLogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929ED9E232CC1E80084FB68 /* SDLogInController.swift */; };
+		D932FFD4232DF4D800176620 /* SDProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D932FFD3232DF4D800176620 /* SDProfileController.swift */; };
 		D934C19F232D00B600C56AFD /* SDSuggestMealController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D934C19E232D00B600C56AFD /* SDSuggestMealController.swift */; };
 		F8FB798ABAFE436885593403 /* Pods_SmartDiet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BDAB2045546B4A54C4FC4A7 /* Pods_SmartDiet.framework */; };
 		FEA557EB26C6C78B89F0177A /* Pods_SmartDietUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE92430AACC842A4B914FF8B /* Pods_SmartDietUITests.framework */; };
@@ -93,6 +94,7 @@
 		A5C006DCF0266172E2B6291E /* Pods-SmartDiet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDiet.release.xcconfig"; path = "Target Support Files/Pods-SmartDiet/Pods-SmartDiet.release.xcconfig"; sourceTree = "<group>"; };
 		C55C7F939F18354F6438FF9E /* Pods_SmartDietTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartDietTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D929ED9E232CC1E80084FB68 /* SDLogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDLogInController.swift; sourceTree = "<group>"; };
+		D932FFD3232DF4D800176620 /* SDProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDProfileController.swift; sourceTree = "<group>"; };
 		D934C19E232D00B600C56AFD /* SDSuggestMealController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDSuggestMealController.swift; sourceTree = "<group>"; };
 		E22632F9CF26CE3648C1A7FB /* Pods-SmartDietUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDietUITests.debug.xcconfig"; path = "Target Support Files/Pods-SmartDietUITests/Pods-SmartDietUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E3219BEC6DD83BE7AEAC94E3 /* Pods-SmartDiet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDiet.debug.xcconfig"; path = "Target Support Files/Pods-SmartDiet/Pods-SmartDiet.debug.xcconfig"; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 		9E46A898232CA8950037F4CD /* SmartDiet */ = {
 			isa = PBXGroup;
 			children = (
+				D932FFD2232DF4AF00176620 /* Profile */,
 				D934C19D232D006E00C56AFD /* SuggestMeal */,
 				9E46A899232CA8950037F4CD /* AppDelegate.swift */,
 				9EE339DE232CE0D300D52128 /* BookAMeal */,
@@ -284,6 +287,14 @@
 				D929ED9E232CC1E80084FB68 /* SDLogInController.swift */,
 			);
 			path = LogIn;
+			sourceTree = "<group>";
+		};
+		D932FFD2232DF4AF00176620 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D932FFD3232DF4D800176620 /* SDProfileController.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		D934C19D232D006E00C56AFD /* SuggestMeal */ = {
@@ -530,6 +541,7 @@
 				9E46A8E7232CC7B50037F4CD /* TypeAliases.swift in Sources */,
 				9EE339E8232CE87B00D52128 /* NetWorking.swift in Sources */,
 				9EE339E2232CE25D00D52128 /* BookAMealViewModel.swift in Sources */,
+				D932FFD4232DF4D800176620 /* SDProfileController.swift in Sources */,
 				9E46A8E0232CB76B0037F4CD /* FoodPtotocols.swift in Sources */,
 				9E46A8D1232CAEC30037F4CD /* SelectFoodCell.swift in Sources */,
 				9E46A8DD232CB6CB0037F4CD /* FoodModel.swift in Sources */,
