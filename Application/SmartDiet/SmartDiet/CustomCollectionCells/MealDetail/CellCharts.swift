@@ -32,7 +32,7 @@ final class CellCharts: UICollectionViewCell {
             let dataEntry = PieChartDataEntry(value: Double(points[index]), label: value, data: Double(points[index]) as AnyObject)
             dataEntries.append(dataEntry)
         }
-        let pieChartDataSet = PieChartDataSet(entries: dataEntries, label: nil)
+        let pieChartDataSet = PieChartDataSet(values: dataEntries, label: nil)
         pieChartDataSet.colors = getColors()
         let pieChartData = PieChartData(dataSet: pieChartDataSet)
         let numFormatter = NumberFormatter()
