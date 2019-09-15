@@ -139,9 +139,31 @@ class SuggestMealController: UIViewController ,UITextFieldDelegate,UIPickerViewD
                 if let unWrappedResponse = response as? [String: Any] {
                     print("unWrappedResponse",unWrappedResponse)
                     DispatchQueue.main.async {
-                        let controllerMealDetail = UIStoryboard.getViewControllerWithId(StoryBoardNames.Food, ControllerIds.MealDetailController) as! MealDetailController
-                        controllerMealDetail.dataSource = MealDetailViewModel(unWrappedResponse)
-                        _ = self.navigationController?.pushViewController(controllerMealDetail, animated: true)
+                        
+                            if let alertmessage:String = unWrappedResponse ["message"] as? String{
+                                
+                                let alert = UIAlertController(title: "Alert", message:alertmessage, preferredStyle: .alert)
+                                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                                    switch action.style{
+                                    case .default:
+                                        print("default")
+                                        
+                                    case .cancel:
+                                        print("cancel")
+                                        
+                                    case .destructive:
+                                        print("destructive")
+                                        
+                                        
+                                    }}))
+                                self.present(alert, animated: true, completion: nil)
+                            }else if (unWrappedResponse["food_id"] != nil){
+                                let controllerMealDetail = UIStoryboard.getViewControllerWithId(StoryBoardNames.Food, ControllerIds.MealDetailController) as! MealDetailController
+                                controllerMealDetail.dataSource = MealDetailViewModel(unWrappedResponse)
+                                _ = self.navigationController?.pushViewController(controllerMealDetail, animated: true)
+                        }
+                        
+                        
                     }
                 }
             }
@@ -168,6 +190,24 @@ class SuggestMealController: UIViewController ,UITextFieldDelegate,UIPickerViewD
                 if let unWrappedResponse = response as? [String: Any] {
                     print("unWrappedResponse",unWrappedResponse)
                     DispatchQueue.main.async {
+                        if let alertmessage:String = unWrappedResponse ["message"] as? String{
+                        
+                        let alert = UIAlertController(title: "Alert", message:alertmessage, preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                            switch action.style{
+                            case .default:
+                                print("default")
+                                
+                            case .cancel:
+                                print("cancel")
+                                
+                            case .destructive:
+                                print("destructive")
+                                
+                                
+                            }}))
+                        self.present(alert, animated: true, completion: nil)
+                    }
                     }
                 }
             }
