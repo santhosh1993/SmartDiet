@@ -28,6 +28,7 @@ final class MealDetailController: UIViewController {
         collectionView.register(UINib(nibName: Nibs.cellWithImage, bundle: nil), forCellWithReuseIdentifier: ReuseIdentifiers.cellWithImage)
         collectionView.register(UINib(nibName: Nibs.mealDetailCell, bundle: nil), forCellWithReuseIdentifier: ReuseIdentifiers.mealDetailCell)
         collectionView.register(UINib(nibName: Nibs.cellCharts, bundle: nil), forCellWithReuseIdentifier: ReuseIdentifiers.cellCharts)
+        collectionView.register(UINib(nibName: Nibs.cellDescription, bundle: nil), forCellWithReuseIdentifier: ReuseIdentifiers.cellDescription)
     }
     private func  showAlert() {
         
@@ -51,10 +52,16 @@ extension MealDetailController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let section = indexPath.section
-        return section == 0 ? getImageCell(indexPath) :
-            section == 1 ? getChartsCell(indexPath):
-            getDetailCell(indexPath)
-        
+        switch section {
+        case 0:
+            return getImageCell(indexPath)
+        case 1:
+            return getDetailCell(indexPath)
+        case 2:
+            return getChartsCell(indexPath)
+        default:
+            return getDescriptionCell(indexPath)
+        }
     }
     func getImageCell(_ indexPath: IndexPath) -> CellWithImage {
         
@@ -68,7 +75,6 @@ extension MealDetailController: UICollectionViewDataSource {
         cell.setImage(dataSource.getIsVeg())
         cell.setTitle(dataSource.getTitle())
         cell.setPrice(dataSource.getPrice())
-        cell.setDescription(dataSource.getDescription())
         cell.onTapAddClosure = { [weak self] in
             self?.showAlert()
         }
@@ -81,16 +87,29 @@ extension MealDetailController: UICollectionViewDataSource {
         cell.setUpData(chartsData.0, points: chartsData.1)
         return cell
     }
+    func getDescriptionCell(_ indexPath: IndexPath) -> CellDescription {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ReuseIdentifiers.cellDescription, for: indexPath) as! CellDescription
+        cell.setDescription(dataSource.getDescription())
+        return cell
+    }
 }
 extension MealDetailController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let deviceWidth = UIScreen.main.bounds.size.width
-        return indexPath.section == 0 ? CGSize(width: deviceWidth, height: 250) :
-            indexPath.section == 1 ? CGSize(width: deviceWidth, height: 260):
-        CGSize(width: deviceWidth, height: dataSource.getHeightofDescCell())
+        let section = indexPath.section
         
+        switch section {
+        case 0:
+            return CGSize(width: deviceWidth, height: 250)
+        case 1:
+            return CGSize(width: deviceWidth, height: 100)
+        case 2:
+            return CGSize(width: deviceWidth, height: 260)
+        default:
+            return CGSize(width: deviceWidth, height: dataSource.getHeightofDescCell())
+        }        
     }
 }
 

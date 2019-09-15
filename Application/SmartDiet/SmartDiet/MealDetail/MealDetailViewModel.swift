@@ -15,7 +15,7 @@ class MealDetailViewModel: MealDetailProtocol {
     init(_ data: [String: Any]) {
         self.data = data
     }
-    func getNumberOfSections() -> Int { return 3 }
+    func getNumberOfSections() -> Int { return 4 }
     
     func getNumberOfRowsInASection(_ index: Int) -> Int { return 1 }
     
@@ -59,7 +59,7 @@ class MealDetailViewModel: MealDetailProtocol {
     func getHeightofDescCell() -> CGFloat {
         let width = UIScreen.main.bounds.size.width
         let heightForLabel = UILabel.heightForView(text: self.getDescription(), font: UIFont(name: FontNames.HiraginoSansW3, size: 14)!, width: width - 20)
-        return 10 + 30 + 10 + 34 + 10 + heightForLabel + 10
+        return 10 + 25 + 10 + heightForLabel + 10
     }
     func getChartsData() -> ([String], [Int]) {
         return ([Constants.protien, Constants.fat, Constants.carbs, Constants.fibre],
