@@ -59,7 +59,13 @@ final class BookAMealViewModel: BooAMealDataSource {
         return [Keys.name: model.name,
                 Keys.isVeg: model.is_veg,
                 Keys.imageUrl: model.image_url,
-                Keys.price: model.price]
+                Keys.price: model.price,
+                Keys.desc: model.description,
+                Keys.protein: model.protein,
+                Keys.carbs: model.carbs,
+                Keys.fat: model.fat,
+                Keys.fiber: model.fiber
+        ]
     }
 }
 

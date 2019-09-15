@@ -28,4 +28,8 @@ final class NutritionIndicator: UIView {
         let view = self.getViewFromXibAndAddItAsSubView()
         if let unWrappedView = view { self.addSubview(unWrappedView) }
     }
+    func setUpData(_ color: UIColor, title: String) {
+        self.labelTitle.text = title
+        self.colorIndicator.backgroundColor = color
+    }
 }

@@ -11,9 +11,12 @@ import UIKit
 final class MealDetailCell: UICollectionViewCell {
 
     //IBOutlets
-    @IBOutlet weak var labelPrice: UILabel!
     @IBOutlet weak var viewFoodType: FoodNameWithTypeView!
     @IBOutlet weak var buttonAdd: UIButton!
+    @IBOutlet weak var labelPrice: UILabel!
+    @IBOutlet weak var labelDesc: UILabel!
+    @IBOutlet weak var contraintLabelHeight: NSLayoutConstraint!
+    var onTapAddClosure: (() -> ())?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,5 +33,16 @@ final class MealDetailCell: UICollectionViewCell {
     }
     func setPrice(_ price: String) {
         self.labelPrice.text = price
+    }
+    func setDescription(_ desc: NSMutableAttributedString) {
+        self.labelDesc.attributedText = desc
+        let width = UIScreen.main.bounds.size.width
+        let heightForLabel = UILabel.heightForView(text: desc, font: UIFont(name: FontNames.HiraginoSansW3, size: 14)!, width: width - 20)
+        contraintLabelHeight.constant = heightForLabel
+    }
+    
+    //MARK: IBActions
+    @IBAction func onTapAdd(_ sender: UIButton) {
+        onTapAddClosure?()
     }
 }

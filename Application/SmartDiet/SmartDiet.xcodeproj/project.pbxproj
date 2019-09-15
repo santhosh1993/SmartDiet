@@ -21,6 +21,7 @@
 		9E321ECF232D3EB500BC5455 /* CellCharts.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E321ECD232D3EB500BC5455 /* CellCharts.xib */; };
 		9E321ED2232DE60D00BC5455 /* NutritionIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E321ED1232DE60D00BC5455 /* NutritionIndicator.swift */; };
 		9E321ED4232DE61500BC5455 /* NutritionIndicator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E321ED3232DE61400BC5455 /* NutritionIndicator.xib */; };
+		9E321ED6232DF35600BC5455 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E321ED5232DF35600BC5455 /* UILabelExtension.swift */; };
 		9E46A89A232CA8950037F4CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A899232CA8950037F4CD /* AppDelegate.swift */; };
 		9E46A89F232CA8950037F4CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E46A89D232CA8950037F4CD /* Main.storyboard */; };
 		9E46A8A2232CA8950037F4CD /* SmartDiet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E46A8A0232CA8950037F4CD /* SmartDiet.xcdatamodeld */; };
@@ -83,6 +84,7 @@
 		9E321ECD232D3EB500BC5455 /* CellCharts.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellCharts.xib; sourceTree = "<group>"; };
 		9E321ED1232DE60D00BC5455 /* NutritionIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionIndicator.swift; sourceTree = "<group>"; };
 		9E321ED3232DE61400BC5455 /* NutritionIndicator.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NutritionIndicator.xib; sourceTree = "<group>"; };
+		9E321ED5232DF35600BC5455 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		9E46A896232CA8950037F4CD /* SmartDiet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartDiet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E46A899232CA8950037F4CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E46A89E232CA8950037F4CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 			children = (
 				9E46A8D7232CAFE70037F4CD /* UIViewExtension.swift */,
 				9EE339EB232CF14D00D52128 /* UIStoryBoard.swift */,
+				9E321ED5232DF35600BC5455 /* UILabelExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -598,6 +601,7 @@
 				9EE339E6232CE79600D52128 /* BookAMealNetworkHandler.swift in Sources */,
 				D934C19F232D00B600C56AFD /* SDSuggestMealController.swift in Sources */,
 				9E46A8A2232CA8950037F4CD /* SmartDiet.xcdatamodeld in Sources */,
+				9E321ED6232DF35600BC5455 /* UILabelExtension.swift in Sources */,
 				9E46A8E7232CC7B50037F4CD /* TypeAliases.swift in Sources */,
 				9EE339E8232CE87B00D52128 /* NetWorking.swift in Sources */,
 				9EE339E2232CE25D00D52128 /* BookAMealViewModel.swift in Sources */,

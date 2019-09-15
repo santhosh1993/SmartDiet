@@ -184,22 +184,23 @@
                     <navigationItem key="navigationItem" title="BookAMeal" id="rN8-YB-C22"/>
                     <connections>
                         <outlet property="collectionView" destination="a1g-1e-QSG" id="uF6-aF-am3"/>
+                        <segue destination="gGC-3h-Iu1" kind="show" id="pFb-17-JSH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SF5-iz-O4n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="857.97101449275374" y="-536.38392857142856"/>
         </scene>
-        <!--Meal Detail Controller-->
+        <!--Meal-->
         <scene sceneID="WCp-An-Yqy">
             <objects>
-                <viewController storyboardIdentifier="MealDetailController" id="gGC-3h-Iu1" customClass="MealDetailController" customModule="SmartDiet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MealDetailController" hidesBottomBarWhenPushed="YES" id="gGC-3h-Iu1" customClass="MealDetailController" customModule="SmartDiet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Igr-yS-OH1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lbd-An-u6g">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gXf-Hp-EtB">
                                     <size key="itemSize" width="50" height="50"/>
@@ -223,7 +224,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cWQ-Sf-KFA"/>
                     </view>
-                    <navigationItem key="navigationItem" id="hR7-YF-llc"/>
+                    <navigationItem key="navigationItem" title="Meal" id="hR7-YF-llc">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="uC1-cJ-ESJ">
+                            <connections>
+                                <action selector="backButtonTapped:" destination="gGC-3h-Iu1" id="TRg-OZ-fha"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="lbd-An-u6g" id="Cmz-vw-Fqz"/>
                     </connections>

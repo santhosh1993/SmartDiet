@@ -12,14 +12,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MealDetailCell" id="gTV-IL-0wX" customClass="MealDetailCell" customModule="SmartDiet" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="371" height="90"/>
+            <rect key="frame" x="0.0" y="0.0" width="371" height="117"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="371" height="90"/>
+                <rect key="frame" x="0.0" y="0.0" width="371" height="117"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hx1-44-lZ7">
-                        <rect key="frame" x="10" y="0.0" width="351" height="90"/>
+                        <rect key="frame" x="10" y="0.0" width="351" height="117"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mx3-lX-2B1" customClass="FoodNameWithTypeView" customModule="SmartDiet" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="10" width="351" height="30"/>
@@ -29,13 +29,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10S-Xj-agh">
-                                <rect key="frame" x="0.0" y="64" width="40.5" height="14"/>
+                                <rect key="frame" x="0.0" y="60" width="40.5" height="14"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeD-cb-HJc">
-                                <rect key="frame" x="259" y="54" width="80" height="34"/>
+                                <rect key="frame" x="259" y="50" width="80" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="geN-VB-hKk"/>
                                     <constraint firstAttribute="width" constant="80" id="rbn-i8-rJU"/>
@@ -44,17 +44,32 @@
                                 <state key="normal" title="Add">
                                     <color key="titleColor" red="0.1019607843" green="0.61176470589999998" blue="0.69019607839999997" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onTapAdd:" destination="gTV-IL-0wX" eventType="touchUpInside" id="4iu-Gy-6jq"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bG-vg-Lxw">
+                                <rect key="frame" x="0.0" y="94" width="351" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="1is-fe-TbI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="5bG-vg-Lxw" firstAttribute="top" secondItem="oeD-cb-HJc" secondAttribute="bottom" constant="10" id="0k9-Tb-vNS"/>
                             <constraint firstItem="10S-Xj-agh" firstAttribute="centerY" secondItem="oeD-cb-HJc" secondAttribute="centerY" id="6Nh-nl-1uh"/>
                             <constraint firstAttribute="trailing" secondItem="Mx3-lX-2B1" secondAttribute="trailing" id="Ah7-cL-hPr"/>
-                            <constraint firstAttribute="bottom" secondItem="oeD-cb-HJc" secondAttribute="bottom" constant="2" id="PQl-Co-nAn"/>
+                            <constraint firstAttribute="trailing" secondItem="5bG-vg-Lxw" secondAttribute="trailing" id="QjO-c3-qHs"/>
                             <constraint firstAttribute="trailing" secondItem="oeD-cb-HJc" secondAttribute="trailing" constant="12" id="WBC-OM-bCU"/>
                             <constraint firstItem="Mx3-lX-2B1" firstAttribute="top" secondItem="hx1-44-lZ7" secondAttribute="top" constant="10" id="cfx-7h-aJB"/>
                             <constraint firstItem="10S-Xj-agh" firstAttribute="leading" secondItem="hx1-44-lZ7" secondAttribute="leading" id="phx-W0-byN"/>
+                            <constraint firstItem="5bG-vg-Lxw" firstAttribute="leading" secondItem="hx1-44-lZ7" secondAttribute="leading" id="wej-IU-eUC"/>
                             <constraint firstItem="Mx3-lX-2B1" firstAttribute="leading" secondItem="hx1-44-lZ7" secondAttribute="leading" id="wqz-HR-X08"/>
+                            <constraint firstItem="oeD-cb-HJc" firstAttribute="top" secondItem="Mx3-lX-2B1" secondAttribute="bottom" constant="10" id="xXM-dL-SI8"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -67,13 +82,15 @@
                 <constraint firstItem="hx1-44-lZ7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="p4a-yx-59t"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="371" height="81"/>
+            <size key="customSize" width="371" height="38"/>
             <connections>
                 <outlet property="buttonAdd" destination="oeD-cb-HJc" id="G0N-RC-Nl1"/>
+                <outlet property="contraintLabelHeight" destination="1is-fe-TbI" id="V3E-M2-MEr"/>
+                <outlet property="labelDesc" destination="5bG-vg-Lxw" id="NNx-ET-3tl"/>
                 <outlet property="labelPrice" destination="10S-Xj-agh" id="y5I-A6-FGM"/>
                 <outlet property="viewFoodType" destination="Mx3-lX-2B1" id="IjT-uS-CKA"/>
             </connections>
-            <point key="canvasLocation" x="105.07246376811595" y="59.933035714285708"/>
+            <point key="canvasLocation" x="105.07246376811595" y="45.200892857142854"/>
         </collectionViewCell>
     </objects>
 </document>
