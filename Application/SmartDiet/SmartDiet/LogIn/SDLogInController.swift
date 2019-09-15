@@ -22,9 +22,8 @@ class SDLogInController: UIViewController,UITextFieldDelegate{
     @IBAction func loginClicked(_ sender: Any) {
         let sv = displaySpinner(onView: self.view)
 removeSpinner(spinner: sv)
-        self.loadHomeScreen()
 
-       // logInAPICallwith(username:usernameTxtFiled.text ?? "",password:passwordTxtField.text ?? "")
+       logInAPICallwith(username:usernameTxtFiled.text ?? "",password:passwordTxtField.text ?? "")
 
     }
     func  logInAPICallwith(username:String,password:String){
@@ -57,6 +56,11 @@ removeSpinner(spinner: sv)
     func loadHomeScreen(){
         let vcTabController = UIStoryboard.getViewControllerWithId(StoryBoardNames.Food, ControllerIds.tabBarController)
         self.navigationController?.pushViewController(vcTabController, animated: false)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.isHidden = true
+        self.navigationController?.navigationBar.isHidden = true
     }
 
 }

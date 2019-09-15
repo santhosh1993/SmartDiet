@@ -28,6 +28,7 @@ struct ControllerIds {
     static let tabBarController = "TabBarController"
     static let MealDetailController = "MealDetailController"
     static let suggestMealController = "SuggestMealController"
+    static let loginController = "SDLogInController"
 }
 struct Colors {
     static let themeColor = "#1A9CB0"
@@ -47,6 +48,8 @@ struct Images {
 }
 struct StoryBoardNames {
     static let Food = "Food"
+    static let Main = "Main"
+    
 }
 struct Keys {
     static let price = "price"

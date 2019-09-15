@@ -188,6 +188,11 @@ class SDProfileController: UIViewController ,UITextFieldDelegate,UIPickerViewDel
         
         return true
     }
+    @IBAction func logOutAction(_ sender: Any) {
+        let vcTabController = UIStoryboard.getViewControllerWithId(StoryBoardNames.Main, ControllerIds.loginController)
+        self.navigationController?.pushViewController(vcTabController, animated: false)
+        
+    }
     /*
      // MARK: - Navigation
      
